@@ -1,16 +1,45 @@
 import React from "react";
 import Pic1 from "../Assets/images/logos/primary-logo.png";
-import Pic2 from "../Assets/images/shapes/about-image-shape2.svg"
-import Pic3 from "../Assets/images/shapes/circle-shape.svg"
-import Pic4 from "../Assets/images/about/about-2.jpg"
-import Pic5 from "../Assets/images/about/about-1.jpg"
-import Pic6 from "../Assets/images/shapes/about-right-shape.svg"
-import Pic7 from "../Assets/images/shapes/about-left-shape.svg"
-import Pic8 from "../Assets/images/shapes/service-left-shape.svg"
-import Pic9 from "../Assets/images/shapes/service-item-shape.svg"
-import Pic10 from "../Assets/images/steps/steps-1.jpg"
-import Pic11 from "../Assets/images/shapes/steps-right-shape.svg"
-import Pic12 from "../Assets/images/steps/steps-2.jpg"
+import Pic2 from "../Assets/images/shapes/about-image-shape2.svg";
+import Pic3 from "../Assets/images/shapes/circle-shape.svg";
+import Pic4 from "../Assets/images/about/about-2.jpg";
+import Pic5 from "../Assets/images/about/about-1.jpg";
+import Pic6 from "../Assets/images/shapes/about-right-shape.svg";
+import Pic7 from "../Assets/images/shapes/about-left-shape.svg";
+import Pic8 from "../Assets/images/shapes/service-left-shape.svg";
+import Pic9 from "../Assets/images/shapes/service-item-shape.svg";
+import Pic10 from "../Assets/images/steps/steps-1.jpg";
+import Pic11 from "../Assets/images/shapes/steps-right-shape.svg";
+import Pic12 from "../Assets/images/steps/steps-2.jpg";
+import pic13 from "../Assets/images/steps/chart.png";
+import pic14 from "../Assets/images/shapes/project-top-shape.svg";
+import pic15 from "../Assets/images/shapes/project-bottom-shape.svg";
+import Pic16 from "../Assets/images/testimonial/testimonial-1.png";
+import pic17 from "../Assets/images/icon/quote.svg";
+import pic18 from "../Assets/images/shapes/testimonial-top-shape.svg";
+import pic19 from "../Assets/images/shapes/testimonial-bottom-shape.svg";
+import pic20 from "../Assets/images/blog/blog-1.jpg";
+import pic21 from "../Assets/images/blog/blog-2.jpg";
+import pic22 from "../Assets/images/blog/blog-3.jpg";
+import pic23 from "../Assets/images/shapes/blog-bg-shape.svg";
+import pic24 from "../Assets/images/brand/brand-1.png";
+import pic25 from "../Assets/images/brand/brand-2.png";
+import pic26 from "../Assets/images/brand/brand-3.png";
+import pic27 from "../Assets/images/brand/brand-4.png";
+import pic28 from "../Assets/images/brand/brand-5.png";
+import pic29 from "../Assets/images/icon/newsletter-left.svg";
+import pic30 from "../Assets/images/icon/newsletter-right.svg";
+import pic31 from "../Assets/images/shapes/footer-top-shape.svg";
+import pic32 from "../Assets/images/logos/secondary-logo.png";
+import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
+import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
+import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
+import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
+import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
+import piccarouel4 from "../Assets/images/portfolio/portfolio-4.jpg";
+
+// import { IconName } from 'react-icons/icon-library'; // Import the icon component
+
 // <!-- CSS here -->
 //       <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 //       <link rel="stylesheet" href="assets/css/font-awesome-pro.min.css" />
@@ -27,6 +56,7 @@ const Home = () => {
   return (
     <>
       {/* <!-- start: Header Area --> */}
+
       <header class="tj-header-area header-1">
         <div class="header-topbar">
           <div class="container">
@@ -89,7 +119,7 @@ const Home = () => {
               <div class="col-12">
                 <div class="mainmenu-wrapper">
                   <div class="site-logo">
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="">
                       <img src={Pic1} alt="Logo" />
                       {/* <img src="assets/images/logos/primary-logo.png" alt="Logo" /> */}
                     </a>
@@ -97,27 +127,43 @@ const Home = () => {
                   <div class="mainmenu main-mobile-menu d-none d-lg-inline-block">
                     <ul>
                       <li class="has-dropdown current-menu-item">
-                        <a href="index.html">Home</a>
+                        <a href="">
+                          Home
+                          {/* <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chevron-down"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                            />
+                          </svg> */}
+                        </a>
+
                         <ul class="sub-menu">
                           <li class="current-menu-item">
-                            <a href="index.html">Home One</a>
+                            <a href="">Home One</a>
                           </li>
                           <li>
-                            <a href="index-2.html">Home Two</a>
+                            <a href="">Home Two</a>
                           </li>
                           <li>
-                            <a href="index-3.html">Home Three</a>
+                            <a href="">Home Three</a>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="about.html">About Us</a>
+                        <a href="">About Us</a>
                       </li>
                       <li class="has-dropdown">
-                        <a href="service.html">Services</a>
+                        <a href="">Services</a>
                         <ul class="sub-menu">
                           <li>
-                            <a href="service.html">Services</a>
+                            <a href="">Services</a>
                           </li>
                           <li>
                             <a href="service-details.html">Service Details</a>
@@ -128,26 +174,24 @@ const Home = () => {
                         <a href="javascript:void(0)">Pages</a>
                         <ul class="sub-menu">
                           <li class="has-dropdown">
-                            <a href="project.html">Projects</a>
+                            <a href="">Projects</a>
                             <ul class="sub-menu">
                               <li>
-                                <a href="project.html">Projects</a>
+                                <a href="">Projects</a>
                               </li>
                               <li>
-                                <a href="project-details.html">
-                                  Project Details
-                                </a>
+                                <a href="">Project Details</a>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="team.html">Team</a>
+                            <a href="">Team</a>
                           </li>
                           <li>
-                            <a href="team-details.html">Team Details</a>
+                            <a href="">Team Details</a>
                           </li>
                           <li>
-                            <a href="price.html">Pricing Plan</a>
+                            <a href="">Pricing Plan</a>
                           </li>
                           <li>
                             <a href="faq.html">Faq</a>
@@ -155,13 +199,13 @@ const Home = () => {
                         </ul>
                       </li>
                       <li class="has-dropdown">
-                        <a href="blog.html">Blog</a>
+                        <a href="">Blog</a>
                         <ul class="sub-menu">
                           <li>
                             <a href="blog-grid.html">Blog Grid</a>
                           </li>
                           <li>
-                            <a href="blog.html">Blog Standard</a>
+                            <a href="">Blog Standard</a>
                           </li>
                           <li>
                             <a href="blog-details.html">Blog Details</a>
@@ -169,7 +213,7 @@ const Home = () => {
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -181,9 +225,10 @@ const Home = () => {
                       </button>
                     </div>
                     <div class="header-button d-none d-md-inline-block">
-                      {/* <a class="tj-primary-btn" href="contact.html">Request a Quote <i class="fa-light fa-arrow-right-from-line"></i></a> */}
                       <a class="tj-primary-btn" href="contact.html">
-                        Request a Quote <i class="bi bi-arrow-bar-right"></i>
+                        Request a Quote
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -303,7 +348,8 @@ const Home = () => {
                     <div class="header-button d-none d-md-inline-block">
                       <a class="tj-primary-btn" href="contact.html">
                         Request a Quote{" "}
-                        <i class="fa-light fa-arrow-right-from-line"></i>
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -326,7 +372,7 @@ const Home = () => {
         {/* <!-- start: Hero Section --> */}
         <section
           class="tj-hero-section"
-          data-bg-image="assets/images/slider/slider-1.jpg"
+          // data-bg-image="assets/images/slider/slider-1.jpg"
         >
           <div class="container">
             <div class="row">
@@ -351,7 +397,8 @@ const Home = () => {
                   <div class="hero-button">
                     <a class="tj-light-button" href="contact.html">
                       Read More{" "}
-                      <i class="fa-light fa-arrow-right-from-line"></i>
+                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                      <i class="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -391,7 +438,7 @@ const Home = () => {
                   <div class="about-feature-item">
                     <div class="feature-item">
                       <div class="feature-icon">
-                      <i class="bi bi-award-fill"></i>
+                        <i class="bi bi-award-fill"></i>
                         {/* <i class="flaticon-quality"></i> */}
                       </div>
                       <div class="feature-text">
@@ -402,7 +449,7 @@ const Home = () => {
                     </div>
                     <div class="feature-item">
                       <div class="feature-icon">
-                      <i class="bi bi-envelope"></i>
+                        <i class="bi bi-envelope"></i>
                         {/* <i class="flaticon-nanotechnology"></i> */}
                       </div>
                       <div class="feature-text">
@@ -415,8 +462,7 @@ const Home = () => {
                   <div class="feature-contact">
                     <div class="about-button">
                       <a class="tj-primary-btn" href="about.html">
-                        Read More{" "}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        Read More <i class="bi bi-arrow-bar-right"></i>
                         {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
                       </a>
                     </div>
@@ -461,10 +507,7 @@ const Home = () => {
                       </text>
                     </svg>
                     <div class="circle-image">
-                      <img
-                        src={Pic3}
-                        alt="Shape"
-                      />
+                      <img src={Pic3} alt="Shape" />
                     </div>
                   </div>
                   <div class="left-image">
@@ -474,10 +517,7 @@ const Home = () => {
                     <img src={Pic5} alt="Image" />
                   </div>
                   <div class="about-shape">
-                    <img
-                      src={Pic2}
-                      alt="Shape"
-                    />
+                    <img src={Pic2} alt="Shape" />
                   </div>
                 </div>
               </div>
@@ -495,7 +535,8 @@ const Home = () => {
          <!-- start: Service Section --> */}
         <section
           class="tj-service-section"
-          data-bg-image="assets/images/bg/service-bg.jpg"
+          dineshBackImages
+          // data-bg-image="assets/images/bg/service-bg.jpg"
         >
           <div class="container">
             <div class="row">
@@ -512,11 +553,12 @@ const Home = () => {
             <div class="row">
               <div class="col-lg-12">
                 <div class="swiper tj-service-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                  <div class="swiper-wrapper dineshSilder">
+                    <div class="swiper-slide dineshsubsilder1">
                       <div class="service-item">
                         <div class="service-icon">
-                          <i class="flaticon-industrial"></i>
+                          {/* <i class="flaticon-industrial"></i> */}
+                          <i class="bi bi-house-door"></i>
                         </div>
                         <span class="sub-title">Manufacturing</span>
                         <h3 class="title">
@@ -529,17 +571,15 @@ const Home = () => {
                           </p>
                         </div>
                         <div class="service-hover-shape">
-                          <img
-                            src={Pic9}
-                            alt="Shape"
-                          />
+                          <img src={Pic9} alt="Shape" />
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide dineshsubsilder2">
                       <div class="service-item">
                         <div class="service-icon">
-                          <i class="flaticon-regulation"></i>
+                          {/* <i class="flaticon-regulation"></i> */}
+                          <i class="bi bi-house-door"></i>
                         </div>
                         <span class="sub-title">Integration Of</span>
                         <h3 class="title">
@@ -552,17 +592,15 @@ const Home = () => {
                           </p>
                         </div>
                         <div class="service-hover-shape">
-                          <img
-                            src={Pic9}
-                            alt="Shape"
-                          />
+                          <img src={Pic9} alt="Shape" />
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide dineshsubsilder3">
                       <div class="service-item">
                         <div class="service-icon">
-                          <i class="flaticon-manufacture"></i>
+                          {/* <i class="flaticon-manufacture"></i> */}
+                          <i class="bi bi-house-door"></i>
                         </div>
                         <span class="sub-title">Personalised</span>
                         <h3 class="title">
@@ -575,24 +613,20 @@ const Home = () => {
                           </p>
                         </div>
                         <div class="service-hover-shape">
-                          <img
-                            src={Pic9}
-                            alt="Shape"
-                          />
+                          <img src={Pic9} alt="Shape" />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-pagination dinesh-pagination">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="service-section-shape">
-            <img
-              src={Pic8}
-              alt="Shape"
-            />
+            <img src={Pic8} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: Service Section --> */}
@@ -723,16 +757,10 @@ const Home = () => {
                       <div class="col-lg-6 order-1 order-lg-2">
                         <div class="steps-images">
                           <div class="left-image">
-                            <img
-                              src={Pic10}
-                              alt="Images"
-                            />
+                            <img src={Pic10} alt="Images" />
                           </div>
                           <div class="right-image">
-                            <img
-                              src={Pic12}
-                              alt="Images"
-                            />
+                            <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
@@ -768,7 +796,8 @@ const Home = () => {
                             <div class="steps-button">
                               <a class="tj-primary-btn" href="#">
                                 More Details{" "}
-                                <i class="fa-light fa-arrow-right-from-line"></i>
+                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                                <i class="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
@@ -783,10 +812,7 @@ const Home = () => {
                             />
                           </div>
                           <div class="right-image">
-                            <img
-                              src={Pic12}
-                              alt="Images"
-                            />
+                            <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
@@ -822,7 +848,8 @@ const Home = () => {
                             <div class="steps-button">
                               <a class="tj-primary-btn" href="#">
                                 More Details{" "}
-                                <i class="fa-light fa-arrow-right-from-line"></i>
+                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                                <i class="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
@@ -837,10 +864,7 @@ const Home = () => {
                             />
                           </div>
                           <div class="right-image">
-                            <img
-                              src={Pic12}
-                              alt="Images"
-                            />
+                            <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
@@ -876,7 +900,8 @@ const Home = () => {
                             <div class="steps-button">
                               <a class="tj-primary-btn" href="#">
                                 More Details{" "}
-                                <i class="fa-light fa-arrow-right-from-line"></i>
+                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                                <i class="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
@@ -891,10 +916,7 @@ const Home = () => {
                             />
                           </div>
                           <div class="right-image">
-                            <img
-                              src={Pic12}
-                              alt="Images"
-                            />
+                            <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
@@ -1000,7 +1022,8 @@ const Home = () => {
                     <div class="analysis-button">
                       <a class="tj-primary-btn" href="contact.html">
                         More Details{" "}
-                        <i class="fa-light fa-arrow-right-from-line"></i>
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -1014,7 +1037,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div class="analysis-chart">
-                      <img src="assets/images/steps/chart.png" alt="Images" />
+                      <img src={pic13} alt="Images" />
                     </div>
                   </div>
                 </div>
@@ -1084,7 +1107,8 @@ const Home = () => {
                   <div class="price-button text-center">
                     <a class="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      <i class="fa-light fa-arrow-right-from-line"></i>
+                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                      <i class="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -1134,7 +1158,8 @@ const Home = () => {
                   <div class="price-button text-center">
                     <a class="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      <i class="fa-light fa-arrow-right-from-line"></i>
+                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                      <i class="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -1184,7 +1209,8 @@ const Home = () => {
                   <div class="price-button text-center">
                     <a class="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      <i class="fa-light fa-arrow-right-from-line"></i>
+                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                      <i class="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -1211,11 +1237,23 @@ const Home = () => {
             <div class="row">
               <div class="col-12">
                 <div class="swiper swiper-container tj-portfolio-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="portfolio-item">
+                  <div class=" portfolio_dinesh">
+                    <div class="testimonial-prev">
+                      {/* <i class="flaticon-right-arrow"></i> */}
+                      <i class="bi bi-arrow-left"></i>
+                      {/* <i class="bi bi-arrow-right"></i> */}
+                    </div>
+                    <div class="testimonial-next">
+                      {/* <i class="flaticon-right-arrow"></i> */}
+                      {/* <i class="bi bi-arrow-left"></i> */}
+                      <i class="bi bi-arrow-right"></i>
+                    </div>
+                  </div>
+                  <div class="swiper-wrapper dineshFlex">
+                    <div class="swiper-slide dineshwidth">
+                      <div class="portfolio-item dineshwidth12">
                         <div
-                          class="portfolio-image"
+                          class="portfolio-image dineshImage"
                           data-bg-image="assets/images/portfolio/portfolio-1.jpg"
                         ></div>
                         <div class="portfolio-content">
@@ -1226,10 +1264,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="portfolio-item">
+                    <div class="swiper-slide dineshwidth">
+                      <div class="portfolio-item dineshwidth12">
                         <div
-                          class="portfolio-image"
+                          class="portfolio-image dineshImage12"
                           data-bg-image="assets/images/portfolio/portfolio-2.jpg"
                         ></div>
                         <div class="portfolio-content">
@@ -1240,10 +1278,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="portfolio-item">
+                    <div class="swiper-slide dineshwidth">
+                      <div class="portfolio-item dineshwidth12">
                         <div
-                          class="portfolio-image"
+                          class="portfolio-image dineshImage13"
                           data-bg-image="assets/images/portfolio/portfolio-3.jpg"
                         ></div>
                         <div class="portfolio-content">
@@ -1254,10 +1292,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="portfolio-item">
+                    <div class="swiper-slide dineshwidth">
+                      <div class="portfolio-item dineshwidth12">
                         <div
-                          class="portfolio-image"
+                          class="portfolio-image dineshImage14"
                           data-bg-image="assets/images/portfolio/portfolio-4.jpg"
                         ></div>
                         <div class="portfolio-content">
@@ -1269,26 +1307,15 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="portfolio-navigation">
-                    <div class="testimonial-prev">
-                      <i class="flaticon-right-arrow"></i>
-                    </div>
-                    <div class="testimonial-next">
-                      <i class="flaticon-right-arrow"></i>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="portfolio-sec-top-shape">
-            <img src="assets/images/shapes/project-top-shape.svg" alt="Shape" />
+            <img src={pic14} alt="Shape" />
           </div>
           <div class="portfolio-sec-bottom-shape">
-            <img
-              src="assets/images/shapes/project-bottom-shape.svg"
-              alt="Shape"
-            />
+            <img src={pic15} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: Portfolio Section --> */}
@@ -1319,15 +1346,9 @@ const Home = () => {
                         <div class="swiper-wrapper">
                           <div class="swiper-slide testimonial-auother">
                             <div class="thumb-image">
-                              <img
-                                src="assets/images/testimonial/testimonial-1.png"
-                                alt="Image"
-                              />
+                              <img src={Pic16} alt="Image" />
                               <div class="quote-icon">
-                                <img
-                                  src="assets/images/icon/quote.svg"
-                                  alt="Icon"
-                                />
+                                <img src={pic17} alt="Icon" />
                               </div>
                             </div>
                             <div class="testimonial-name">
@@ -1350,37 +1371,41 @@ const Home = () => {
                                 <ul class="dot-style">
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-x-twitter"></i>
+                                      {/* <i class="fa-brands fa-x-twitter"></i> */}
+                                      <i class="bi bi-twitter-x"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-whatsapp"></i>
+                                      {/* <i class="fa-brands fa-whatsapp"></i> */}
+                                      <i class="bi bi-whatsapp"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-instagram"></i>
+                                      {/* <i class="fa-brands fa-instagram"></i> */}
+                                      <i class="bi bi-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-facebook-f"></i>
+                                      {/* <i class="fa-brands fa-facebook-f"></i> */}
+                                      <i class="bi bi-facebook"></i>
                                     </a>
                                   </li>
                                 </ul>
                               </div>
                             </div>
                           </div>
-                          <div class="swiper-slide testimonial-auother">
+                          {/* <div class="swiper-slide testimonial-auother">
                             <div class="thumb-image">
                               <img
-                                src="assets/images/testimonial/testimonial-1.png"
+                                src={Pic16}
                                 alt="Image"
                               />
                               <div class="quote-icon">
                                 <img
-                                  src="assets/images/icon/quote.svg"
+                                  src={pic17}
                                   alt="Icon"
                                 />
                               </div>
@@ -1392,7 +1417,6 @@ const Home = () => {
                             <div class="testimonial-info">
                               <div class="testimonial-rating">
                                 <div class="star-ratings">
-                                  {/* <div class="fill-ratings" style="width: 73%"> */}
                                   <div class="fill-ratings">
                                     <span>★★★★★</span>
                                   </div>
@@ -1405,35 +1429,37 @@ const Home = () => {
                                 <ul class="dot-style">
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-x-twitter"></i>
+                                      <i class="bi bi-twitter-x"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-whatsapp"></i>
+                                      <i class="bi bi-whatsapp"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-instagram"></i>
+                                   
+                                      <i class="bi bi-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      <i class="fa-brands fa-facebook-f"></i>
+                                      
+                                      <i class="bi bi-facebook"></i>
                                     </a>
                                   </li>
                                 </ul>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-7">
                       <div class="swiper thumb-content-slider">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
+                          {/* <div class="swiper-slide">
                             <div class="testimonial-content-slider">
                               <p>
                                 ‘’There are many variations of passages of Lorem
@@ -1446,7 +1472,7 @@ const Home = () => {
                                 text.’’
                               </p>
                             </div>
-                          </div>
+                          </div> */}
                           <div class="swiper-slide">
                             <div class="testimonial-content-slider">
                               <p>
@@ -1478,16 +1504,10 @@ const Home = () => {
             </div>
           </div>
           <div class="testimonial-sec-top-shape">
-            <img
-              src="assets/images/shapes/testimonial-top-shape.svg"
-              alt="Images"
-            />
+            <img src={pic18} alt="Images" />
           </div>
           <div class="testimonial-sec-bottom-shape">
-            <img
-              src="assets/images/shapes/testimonial-bottom-shape.svg"
-              alt="Images"
-            />
+            <img src={pic19} alt="Images" />
           </div>
         </section>
         {/* <!-- end: Testimonial Section --> */}
@@ -1511,6 +1531,41 @@ const Home = () => {
             <div class="row">
               <div class="col-lg-7">
                 <div class="accordion tj-faq" id="faqOne">
+                  {/* <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong>
+                          This is the first item's accordion body.
+                        </strong>{" "}
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the{" "}
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div> */}
                   <div class="faq-item">
                     <button
                       class="faq-title"
@@ -1703,7 +1758,7 @@ const Home = () => {
                 <div class="blog-item">
                   <div class="blog-image">
                     <a href="blog-details.html">
-                      <img src="assets/images/blog/blog-1.jpg" alt="Images" />
+                      <img src={pic20} alt="Images" />
                     </a>
                   </div>
                   <div class="blog-content">
@@ -1711,13 +1766,15 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            <i class="flaticon-user"></i>
+                            {/* <i class="flaticon-user"></i> */}
+                            <i class="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="blog-details.html">Admin</a>
                         </li>
                         <li>
                           <span>
-                            <i class="fa-solid fa-comments"></i>
+                            {/* <i class="fa-solid fa-comments"></i> */}
+                            <i class="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
@@ -1731,7 +1788,8 @@ const Home = () => {
                     <div class="blog-button">
                       <a class="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        <i class="fa-light fa-arrow-right-from-line"></i>
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -1745,7 +1803,7 @@ const Home = () => {
                 <div class="blog-item">
                   <div class="blog-image">
                     <a href="blog-details.html">
-                      <img src="assets/images/blog/blog-2.jpg" alt="Images" />
+                      <img src={pic21} alt="Images" />
                     </a>
                   </div>
                   <div class="blog-content">
@@ -1753,13 +1811,15 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            <i class="flaticon-user"></i>
+                            {/* <i class="flaticon-user"></i> */}
+                            <i class="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            <i class="fa-solid fa-comments"></i>
+                            {/* <i class="fa-solid fa-comments"></i> */}
+                            <i class="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
@@ -1773,7 +1833,8 @@ const Home = () => {
                     <div class="blog-button">
                       <a class="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        <i class="fa-light fa-arrow-right-from-line"></i>
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -1787,7 +1848,7 @@ const Home = () => {
                 <div class="blog-item">
                   <div class="blog-image">
                     <a href="blog-details.html">
-                      <img src="assets/images/blog/blog-3.jpg" alt="Images" />
+                      <img src={pic22} alt="Images" />
                     </a>
                   </div>
                   <div class="blog-content">
@@ -1795,13 +1856,15 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            <i class="flaticon-user"></i>
+                            {/* <i class="flaticon-user"></i> */}
+                            <i class="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            <i class="fa-solid fa-comments"></i>
+                            {/* <i class="fa-solid fa-comments"></i> */}
+                            <i class="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
@@ -1815,7 +1878,8 @@ const Home = () => {
                     <div class="blog-button">
                       <a class="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        <i class="fa-light fa-arrow-right-from-line"></i>
+                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                        <i class="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
@@ -1828,7 +1892,7 @@ const Home = () => {
             </div>
           </div>
           <div class="blog-sec-shape">
-            <img src="assets/images/shapes/blog-bg-shape.svg" alt="Shape" />
+            <img src={pic23} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: Blog Section --> */}
@@ -1848,54 +1912,39 @@ const Home = () => {
             <div class="row">
               <div class="col-12">
                 <div class="swiper tj-brand-slider">
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper dineshborder">
                     <div class="swiper-slide">
                       <div class="brand-item">
                         <a href="#">
-                          <img
-                            src="assets/images/brand/brand-1.png"
-                            alt="Images"
-                          />
+                          <img src={pic24} alt="Images" />
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="brand-item">
                         <a href="#">
-                          <img
-                            src="assets/images/brand/brand-2.png"
-                            alt="Images"
-                          />
+                          <img src={pic25} alt="Images" />
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="brand-item">
                         <a href="#">
-                          <img
-                            src="assets/images/brand/brand-3.png"
-                            alt="Images"
-                          />
+                          <img src={pic26} alt="Images" />
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="brand-item">
                         <a href="#">
-                          <img
-                            src="assets/images/brand/brand-4.png"
-                            alt="Images"
-                          />
+                          <img src={pic27} alt="Images" />
                         </a>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="brand-item">
                         <a href="#">
-                          <img
-                            src="assets/images/brand/brand-5.png"
-                            alt="Images"
-                          />
+                          <img src={pic28} alt="Images" />
                         </a>
                       </div>
                     </div>
@@ -1922,10 +1971,7 @@ const Home = () => {
                       Get Instant Industrial <span>Updates!</span>
                     </h2>
                     <div class="left-icon">
-                      <img
-                        src="assets/images/icon/newsletter-left.svg"
-                        alt="Icon"
-                      />
+                      <img src={pic29} alt="Icon" />
                     </div>
                   </div>
                   <div class="contact-form-style-2">
@@ -1959,10 +2005,7 @@ const Home = () => {
                       </button>
                     </form>
                     <div class="right-icon">
-                      <img
-                        src="assets/images/icon/newsletter-right.svg"
-                        alt="Icon"
-                      />
+                      <img src={pic30} alt="Icon" />
                     </div>
                   </div>
                 </div>
@@ -1972,6 +2015,217 @@ const Home = () => {
         </section>
         {/* <!-- end: Newsletter Section --> */}
       </main>
+      {/* 
+      <!-- start: Footer Area --> */}
+      <footer class="tj-footer-area footer-1">
+        <div class="footer-top-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-widget footer1-col-1">
+                  <div class="footer-info">
+                    <div class="footer-logo">
+                      <a class="logo" href="index.html">
+                        <img src={pic32} alt="Logo" />
+                      </a>
+                    </div>
+                    <div class="desc">
+                      <p>
+                        The point of using Lorem Ipsum is that it has a
+                        more-or-less normal distribution of letters, as opposed
+                        to using 'Content here.
+                      </p>
+                    </div>
+                    <div class="footer-share">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            {/* <i class="fa-brands fa-x-twitter"></i> */}
+                            <i class="bi bi-twitter-x"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            {/* <i class="fa-brands fa-whatsapp"></i> */}
+                            <i class="bi bi-whatsapp"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            {/* <i class="fa-brands fa-instagram"></i> */}
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            {/* <i class="fa-brands fa-facebook-f"></i> */}
+                            <i class="bi bi-facebook"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget footer1-col-2 widget_nav_menu">
+                  <div class="footer-title">
+                    <h4 class="title">Our Services</h4>
+                  </div>
+                  <div class="footer-menu">
+                    <ul>
+                      <li>
+                        <a href="#">Power & Energy Sectors</a>
+                      </li>
+                      <li>
+                        <a href="#">Explore Tiling & Painiting</a>
+                      </li>
+                      <li>
+                        <a href="#">Quality Specialist Engineer</a>
+                      </li>
+                      <li>
+                        <a href="#">Automotive Parts & System</a>
+                      </li>
+                      <li>
+                        <a href="#">Petroleum & Gas Engineering</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="footer-widget footer1-col-3 widget_nav_menu">
+                  <div class="footer-title">
+                    <h4 class="title">Useful links</h4>
+                  </div>
+                  <div class="footer-menu">
+                    <ul>
+                      <li>
+                        <a href="about.html">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#">Our Mission</a>
+                      </li>
+                      <li>
+                        <a href="#">Our Process</a>
+                      </li>
+                      <li>
+                        <a href="#">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-widget footer1-col-4">
+                  <div class="footer-title">
+                    <h4 class="title">Official Info</h4>
+                  </div>
+                  <div class="footer-contact">
+                    <ul>
+                      <li>
+                        <div class="contact-icon">
+                          {/* <i class="fa-solid fa-envelope"></i> */}
+                          <i class="bi bi-envelope"></i>
+                        </div>
+                        <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                      </li>
+                      <li>
+                        <div class="contact-icon">
+                          {/* <i class="fa-sharp fa-solid fa-globe"></i> */}
+                          <i class="bi bi-globe"></i>
+                        </div>
+                        <a href="#">www.yourwebsite.com</a>
+                      </li>
+                      <li>
+                        <div class="contact-icon">
+                          {/* <i class="fa-regular fa-location-dot"></i> */}
+                          <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <span>225 Marion Street, Columbia</span>
+                      </li>
+                      <li>
+                        <div class="contact-icon">
+                          {/* <i class="fa-solid fa-phone-volume"></i> */}
+                          <i class="bi bi-phone"></i>
+                        </div>
+                        <a href="tel:+00123456789">+ 00 123 456 789</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shape-left">
+            <img src={pic31} alt="Shape" />
+          </div>
+          <div class="shape-right">
+            <img src={pic31} alt="Shape" />
+          </div>
+        </div>
+        <div class="tj-copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="copyright-content-ara">
+                  <div class="copyright-text">
+                    <p>
+                      Copyright © 2024{" "}
+                      <a href="#" target="_blank">
+                        {" "}
+                        ThemeJunction.{" "}
+                      </a>{" "}
+                      All Rights Reserved.
+                    </p>
+                  </div>
+                  <div class="bottom-menu">
+                    <ul>
+                      <li>
+                        <a href="#">Setting & Privacy</a>
+                      </li>
+                      <li>
+                        <a href="#">FAQ</a>
+                      </li>
+                      <li>
+                        <a href="#">Support</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-left-shape">
+          <img src={pic33} alt="Shape" />
+        </div>
+        <div class="sec-right-shape">
+          <img src={pic34} alt="Shape" />
+        </div>
+      </footer>
+      {/* <!-- end: Footer Area --> */}
+
+      {/* <!-- start: Back To Top --> */}
+      <div class="progress-wrap" id="scrollUp">
+        <h1>Hello</h1>
+        {/* <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+          />
+        </svg> */}
+      </div>
     </>
   );
 };

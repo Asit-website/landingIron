@@ -5808,7 +5808,7 @@ START: Portfolio CSS
 .tj-portfolio-slider {
   padding-top: 65px;
 }
-.tj-portfolio-slider .portfolio-navigation {
+/* .tj-portfolio-slider .portfolio-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5847,7 +5847,7 @@ START: Portfolio CSS
     font-size: 40px;
     top: 0;
   }
-}
+} */
 
 .portfolio-item {
   position: relative;
