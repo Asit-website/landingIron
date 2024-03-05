@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Slider from "react-slick";
 import Pic1 from "../Assets/images/logos/primary-logo.png";
 import Pic2 from "../Assets/images/shapes/about-image-shape2.svg";
 import Pic3 from "../Assets/images/shapes/circle-shape.svg";
@@ -33,6 +34,7 @@ import pic31 from "../Assets/images/shapes/footer-top-shape.svg";
 import pic32 from "../Assets/images/logos/secondary-logo.png";
 import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
 import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
+import pic35 from "../Assets/images/steps/steps-3.jpg";
 import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
 import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
 import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
@@ -53,6 +55,51 @@ import piccarouel4 from "../Assets/images/portfolio/portfolio-4.jpg";
 //       <link rel="stylesheet" href="assets/css/main.css" />
 
 const Home = () => {
+  const item = [
+    {
+      image: "../Assets/images/portfolio/portfolio-1.jpg",
+      title: "Aurthur Barry",
+      subtitle: "Sugar, Distillery",
+    },
+    {
+      image: "../Assets/images/portfolio/portfolio-2.jpg",
+      title: "Bradley",
+      subtitle: "Cement, Petrochemical",
+    },
+    {
+      image: "../Assets/images/portfolio/portfolio-3.jpg",
+      title: "Louis Miller",
+      subtitle: "Sugar, Petrochemical",
+    },
+    {
+      image: "../Assets/images/portfolio/portfolio-4.jpg",
+      title: "Grey George",
+      subtitle: "Sugar, Cement",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  console.log(currentIndex);
+  const goToPrevSlide = () => {
+    console.log("hello");
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? item.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === item.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
       {/* <!-- start: Header Area --> */}
@@ -531,13 +578,9 @@ const Home = () => {
           </div>
         </section>
         {/* <!-- end: About Section --> */}
-        {/* 
-         <!-- start: Service Section --> */}
-        <section
-          class="tj-service-section"
-          dineshBackImages
-          // data-bg-image="assets/images/bg/service-bg.jpg"
-        >
+
+        {/*  <!-- start: Service Section --> */}
+        <section class="tj-service-section dineshBackImages">
           <div class="container">
             <div class="row">
               <div class="tj-heading-area">
@@ -553,73 +596,174 @@ const Home = () => {
             <div class="row">
               <div class="col-lg-12">
                 <div class="swiper tj-service-slider">
-                  <div class="swiper-wrapper dineshSilder">
-                    <div class="swiper-slide dineshsubsilder1">
-                      <div class="service-item">
-                        <div class="service-icon">
-                          {/* <i class="flaticon-industrial"></i> */}
-                          <i class="bi bi-house-door"></i>
-                        </div>
-                        <span class="sub-title">Manufacturing</span>
-                        <h3 class="title">
-                          <a href="#">And Logistics</a>
-                        </h3>
-                        <div class="desc">
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted by the readable content.
-                          </p>
-                        </div>
-                        <div class="service-hover-shape">
-                          <img src={Pic9} alt="Shape" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide dineshsubsilder2">
-                      <div class="service-item">
-                        <div class="service-icon">
-                          {/* <i class="flaticon-regulation"></i> */}
-                          <i class="bi bi-house-door"></i>
-                        </div>
-                        <span class="sub-title">Integration Of</span>
-                        <h3 class="title">
-                          <a href="#">New Technology</a>
-                        </h3>
-                        <div class="desc">
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted by the readable content.
-                          </p>
-                        </div>
-                        <div class="service-hover-shape">
-                          <img src={Pic9} alt="Shape" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide dineshsubsilder3">
-                      <div class="service-item">
-                        <div class="service-icon">
-                          {/* <i class="flaticon-manufacture"></i> */}
-                          <i class="bi bi-house-door"></i>
-                        </div>
-                        <span class="sub-title">Personalised</span>
-                        <h3 class="title">
-                          <a href="#">End Products</a>
-                        </h3>
-                        <div class="desc">
-                          <p>
-                            It is a long established fact that a reader will be
-                            distracted by the readable content.
-                          </p>
-                        </div>
-                        <div class="service-hover-shape">
-                          <img src={Pic9} alt="Shape" />
+                  <div class="swiper-wrapper ">
+                    <Slider {...settings}>
+                      <div className="slider-slide">
+                        <div className="swiper-wrapper dineshSilder">
+                          <div className="swiper-slide dineshsubsilder1">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Manufacturing</span>
+                              <h3 className="title">
+                                <a href="#">And Logistics</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder2">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Integration Of</span>
+                              <h3 className="title">
+                                <a href="#">New Technology</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder3">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Personalised</span>
+                              <h3 className="title">
+                                <a href="#">End Products</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination dinesh-pagination">
-                    <i class="bi bi-three-dots"></i>
+                      <div className="slider-slide">
+                        <div className="swiper-wrapper dineshSilder">
+                          <div className="swiper-slide dineshsubsilder1">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Manufacturing</span>
+                              <h3 className="title">
+                                <a href="#">And Logistics</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder2">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Integration Of</span>
+                              <h3 className="title">
+                                <a href="#">New Technology</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder3">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Personalised</span>
+                              <h3 className="title">
+                                <a href="#">End Products</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="slider-slide">
+                        <div className="swiper-wrapper dineshSilder">
+                          <div className="swiper-slide dineshsubsilder1">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Manufacturing</span>
+                              <h3 className="title">
+                                <a href="#">And Logistics</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder2">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Integration Of</span>
+                              <h3 className="title">
+                                <a href="#">New Technology</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-slide dineshsubsilder3">
+                            <div className="service-item">
+                              <div className="service-icon">
+                                <i className="bi bi-house-door"></i>
+                              </div>
+                              <span className="sub-title">Personalised</span>
+                              <h3 className="title">
+                                <a href="#">End Products</a>
+                              </h3>
+                              <div className="desc">
+                                <p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Slider>
                   </div>
                 </div>
               </div>
@@ -806,10 +950,7 @@ const Home = () => {
                       <div class="col-lg-6 order-1 order-lg-2">
                         <div class="steps-images">
                           <div class="left-image">
-                            <img
-                              src="assets/images/steps/steps-3.jpg"
-                              alt="Images"
-                            />
+                            <img src={pic35} alt="Images" />
                           </div>
                           <div class="right-image">
                             <img src={Pic12} alt="Images" />
@@ -858,10 +999,7 @@ const Home = () => {
                       <div class="col-lg-6 order-1 order-lg-2">
                         <div class="steps-images">
                           <div class="left-image">
-                            <img
-                              src="assets/images/steps/steps-1.jpg"
-                              alt="Images"
-                            />
+                            <img src={Pic10} alt="Images" />
                           </div>
                           <div class="right-image">
                             <img src={Pic12} alt="Images" />
@@ -910,10 +1048,7 @@ const Home = () => {
                       <div class="col-lg-6 order-1 order-lg-2">
                         <div class="steps-images">
                           <div class="left-image">
-                            <img
-                              src="assets/images/steps/steps-3.jpg"
-                              alt="Images"
-                            />
+                            <img src={pic35} alt="Images" />
                           </div>
                           <div class="right-image">
                             <img src={Pic12} alt="Images" />
@@ -1240,31 +1375,45 @@ const Home = () => {
                   <div class=" portfolio_dinesh">
                     <div class="testimonial-prev">
                       {/* <i class="flaticon-right-arrow"></i> */}
-                      <i class="bi bi-arrow-left"></i>
+                      <button onClick={goToPrevSlide}>
+                        {" "}
+                        <i class="bi bi-arrow-left"></i>{" "}
+                      </button>
+                      {/* <i class="bi bi-arrow-left"></i> */}
                       {/* <i class="bi bi-arrow-right"></i> */}
                     </div>
                     <div class="testimonial-next">
                       {/* <i class="flaticon-right-arrow"></i> */}
                       {/* <i class="bi bi-arrow-left"></i> */}
-                      <i class="bi bi-arrow-right"></i>
+                      <button onClick={goToNextSlide}>
+                        <i class="bi bi-arrow-right"></i>{" "}
+                      </button>
                     </div>
                   </div>
                   <div class="swiper-wrapper dineshFlex">
                     <div class="swiper-slide dineshwidth">
                       <div class="portfolio-item dineshwidth12">
-                        <div
-                          class="portfolio-image dineshImage"
-                          data-bg-image="assets/images/portfolio/portfolio-1.jpg"
-                        ></div>
-                        <div class="portfolio-content">
-                          <h4 class="title">
-                            <a href="#">Bradley</a>
-                          </h4>
-                          <span class="sub-title">Cement, Petrochemical</span>
-                        </div>
+                        {item.map((items, index) => (
+                          <div  className={`slide ${
+                            index === currentIndex ? "active" : "unactive"
+                             }`}>
+                            <div
+                              class="portfolio-image dineshImage"
+                             
+                            > 
+                              <img src={items.image} alt="" />
+                            </div>
+                            <div class="portfolio-content">
+                              <h4 class="title">
+                                <a href="#">{items.title}</a>
+                              </h4>
+                              <span class="sub-title"> {items.subtitle}</span>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                    <div class="swiper-slide dineshwidth">
+                    {/* <div class="swiper-slide dineshwidth">
                       <div class="portfolio-item dineshwidth12">
                         <div
                           class="portfolio-image dineshImage12"
@@ -1305,7 +1454,7 @@ const Home = () => {
                           <span class="sub-title">Sugar, Cement</span>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -2015,8 +2164,8 @@ const Home = () => {
         </section>
         {/* <!-- end: Newsletter Section --> */}
       </main>
-      {/* 
-      <!-- start: Footer Area --> */}
+
+      {/* <!-- start: Footer Area --> */}
       <footer class="tj-footer-area footer-1">
         <div class="footer-top-area">
           <div class="container">
