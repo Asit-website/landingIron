@@ -100,55 +100,62 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const buttomtoptop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       {/* <!-- start: Header Area --> */}
 
-      <header class="tj-header-area header-1">
-        <div class="header-topbar">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="header-topbar-content">
-                  <div class="header-socials">
+      <header className="tj-header-area header-1">
+        <div className="header-topbar">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="header-topbar-content">
+                  <div className="header-socials">
                     <ul>
                       <li>
                         <a href="#">
-                          <i class="bi bi-twitter-x"></i>
+                          <i className="bi bi-twitter-x"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="bi bi-whatsapp"></i>
+                          <i className="bi bi-whatsapp"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="bi bi-instagram"></i>
+                          <i className="bi bi-instagram"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="bi bi-facebook"></i>
+                          <i className="bi bi-facebook"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <div class="header-contact-infos">
+                  <div className="header-contact-infos">
                     <ul>
-                      {/* <li><i class="flaticon-pin"></i><span>27/4 Emirates-United States</span></li> */}
+                      {/* <li><i className="flaticon-pin"></i><span>27/4 Emirates-United States</span></li> */}
                       <li>
-                        <i class="bi bi-geo-alt"></i>
+                        <i className="bi bi-geo-alt"></i>
                         <span>27/4 Emirates-United States</span>
                       </li>
-                      {/* <li><i class="flaticon-old-typical-phone"></i><a href="tel:(+1)-12345678900">(+1)-123 456 789 00</a></li> */}
+                      {/* <li><i className="flaticon-old-typical-phone"></i><a href="tel:(+1)-12345678900">(+1)-123 456 789 00</a></li> */}
                       <li>
-                        <i class="bi bi-telephone-inbound"></i>
+                        <i className="bi bi-telephone-inbound"></i>
                         <a href="tel:(+1)-12345678900">(+1)-123 456 789 00</a>
                       </li>
-                      {/* <li><i class="flaticon-letter"></i><a href="mailto:mail@indupress.com">mail@indupress.com</a></li> */}
+                      {/* <li><i className="flaticon-letter"></i><a href="mailto:mail@indupress.com">mail@indupress.com</a></li> */}
                       <li>
-                        <i class="bi bi-envelope"></i>
+                        <i className="bi bi-envelope"></i>
                         <a href="mailto:mail@indupress.com">
                           mail@indupress.com
                         </a>
@@ -160,20 +167,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div class="mainmenu-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="mainmenu-wrapper">
-                  <div class="site-logo">
-                    <a class="logo" href="">
+        <div className="mainmenu-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="mainmenu-wrapper">
+                  <div className="site-logo">
+                    <a className="logo" href="">
                       <img src={Pic1} alt="Logo" />
                       {/* <img src="assets/images/logos/primary-logo.png" alt="Logo" /> */}
                     </a>
                   </div>
-                  <div class="mainmenu main-mobile-menu d-none d-lg-inline-block">
+                  <div className="mainmenu main-mobile-menu d-none d-lg-inline-block">
                     <ul>
-                      <li class="has-dropdown current-menu-item">
+                      <li className="has-dropdown current-menu-item">
                         <a href="">
                           Home
                           {/* <svg
@@ -181,7 +188,7 @@ const Home = () => {
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-chevron-down"
+                            className="bi bi-chevron-down"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -191,8 +198,8 @@ const Home = () => {
                           </svg> */}
                         </a>
 
-                        <ul class="sub-menu">
-                          <li class="current-menu-item">
+                        <ul className="sub-menu">
+                          <li className="current-menu-item">
                             <a href="">Home One</a>
                           </li>
                           <li>
@@ -206,9 +213,9 @@ const Home = () => {
                       <li>
                         <a href="">About Us</a>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="">Services</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="">Services</a>
                           </li>
@@ -217,12 +224,12 @@ const Home = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="javascript:void(0)">Pages</a>
-                        <ul class="sub-menu">
-                          <li class="has-dropdown">
+                        <ul className="sub-menu">
+                          <li className="has-dropdown">
                             <a href="">Projects</a>
-                            <ul class="sub-menu">
+                            <ul className="sub-menu">
                               <li>
                                 <a href="">Projects</a>
                               </li>
@@ -245,9 +252,9 @@ const Home = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="">Blog</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="blog-grid.html">Blog Grid</a>
                           </li>
@@ -264,22 +271,22 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div class="mainmenu-right">
-                    <div class="header-search d-none d-xl-inline-block">
-                      <button class="search">
-                        {/* <i class="fa-light fa-magnifying-glass"></i> */}
-                        <i class="bi bi-search"></i>
+                  <div className="mainmenu-right">
+                    <div className="header-search d-none d-xl-inline-block">
+                      <button className="search">
+                        {/* <i className="fa-light fa-magnifying-glass"></i> */}
+                        <i className="bi bi-search"></i>
                       </button>
                     </div>
-                    <div class="header-button d-none d-md-inline-block">
-                      <a class="tj-primary-btn" href="contact.html">
+                    <div className="header-button d-none d-md-inline-block">
+                      <a className="tj-primary-btn" href="contact.html">
                         Request a Quote
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="menu-bar d-lg-none">
+                  <div className="menu-bar d-lg-none">
                     <button>
                       <span></span>
                       <span></span>
@@ -293,26 +300,26 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <header class="tj-header-area header-sticky header-1">
-        <div class="mainmenu-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="mainmenu-wrapper">
-                  <div class="site-logo">
-                    <a class="logo" href="index.html">
+      <header className="tj-header-area header-sticky header-1">
+        <div className="mainmenu-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="mainmenu-wrapper">
+                  <div className="site-logo">
+                    <a className="logo" href="index.html">
                       <img
                         src="assets/images/logos/primary-logo.png"
                         alt="Logo"
                       />
                     </a>
                   </div>
-                  <div class="mainmenu d-none d-lg-inline-block">
+                  <div className="mainmenu d-none d-lg-inline-block">
                     <ul>
-                      <li class="has-dropdown current-menu-item">
+                      <li className="has-dropdown current-menu-item">
                         <a href="index.html">Home</a>
-                        <ul class="sub-menu">
-                          <li class="current-menu-item">
+                        <ul className="sub-menu">
+                          <li className="current-menu-item">
                             <a href="index.html">Home One</a>
                           </li>
                           <li>
@@ -326,9 +333,9 @@ const Home = () => {
                       <li>
                         <a href="about.html">About Us</a>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="service.html">Services</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="service.html">Services</a>
                           </li>
@@ -337,12 +344,12 @@ const Home = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="javascript:void(0)">Pages</a>
-                        <ul class="sub-menu">
-                          <li class="has-dropdown">
+                        <ul className="sub-menu">
+                          <li className="has-dropdown">
                             <a href="project.html">Projects</a>
-                            <ul class="sub-menu">
+                            <ul className="sub-menu">
                               <li>
                                 <a href="project.html">Projects</a>
                               </li>
@@ -367,9 +374,9 @@ const Home = () => {
                           </li>
                         </ul>
                       </li>
-                      <li class="has-dropdown">
+                      <li className="has-dropdown">
                         <a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
+                        <ul className="sub-menu">
                           <li>
                             <a href="blog-grid.html">Blog Grid</a>
                           </li>
@@ -386,21 +393,21 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div class="mainmenu-right">
-                    <div class="header-search d-none d-xl-inline-block">
-                      <button class="search">
-                        <i class="fa-light fa-magnifying-glass"></i>
+                  <div className="mainmenu-right">
+                    <div className="header-search d-none d-xl-inline-block">
+                      <button className="search">
+                        <i className="fa-light fa-magnifying-glass"></i>
                       </button>
                     </div>
-                    <div class="header-button d-none d-md-inline-block">
-                      <a class="tj-primary-btn" href="contact.html">
+                    <div className="header-button d-none d-md-inline-block">
+                      <a className="tj-primary-btn" href="contact.html">
                         Request a Quote{" "}
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="menu-bar d-lg-none">
+                  <div className="menu-bar d-lg-none">
                     <button>
                       <span></span>
                       <span></span>
@@ -415,25 +422,25 @@ const Home = () => {
         </div>
       </header>
 
-      <main id="primary" class="site-main">
+      <main id="primary" className="site-main">
         {/* <!-- start: Hero Section --> */}
         <section
-          class="tj-hero-section"
+          className="tj-hero-section"
           // data-bg-image="assets/images/slider/slider-1.jpg"
         >
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="hero-content">
-                  <h4 class="sub-title">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="hero-content">
+                  <h4 className="sub-title">
                     Unlimited Inventiveness
-                    <span class="subtitle_shape"></span>
+                    <span className="subtitle_shape"></span>
                   </h4>
-                  <h1 class="sec-title">We are the Delivering</h1>
-                  <h2 class="type-text">
-                    High-Quality <span class="text">Services</span>
+                  <h1 className="sec-title">We are the Delivering</h1>
+                  <h2 className="type-text">
+                    High-Quality <span className="text">Services</span>
                   </h2>
-                  <div class="desc">
+                  <div className="desc">
                     <p>
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
@@ -441,11 +448,11 @@ const Home = () => {
                       even slightly believable.
                     </p>
                   </div>
-                  <div class="hero-button">
-                    <a class="tj-light-button" href="contact.html">
+                  <div className="hero-button">
+                    <a className="tj-light-button" href="contact.html">
                       Read More{" "}
-                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                      <i class="bi bi-arrow-bar-right"></i>
+                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -453,26 +460,26 @@ const Home = () => {
             </div>
           </div>
           {/* <!-- vertical lines start --> */}
-          <div class="vertical-lines-wrapper"></div>
+          <div className="vertical-lines-wrapper"></div>
           {/* <!-- vertical lines end --> */}
         </section>
         {/* <!-- end: Hero Section --> */}
 
         {/* <!-- start: About Section --> */}
-        <section class="tj-about-section">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-xl-7 col-12 order-2 order-xl-1">
-                <div class="about-content">
-                  <div class="tj-heading-area">
-                    <h4 class="sub-title">
+        <section className="tj-about-section">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-xl-7 col-12 order-2 order-xl-1">
+                <div className="about-content">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
                       About Our Company
-                      <span class="section-sub-title-shape"></span>
+                      <span className="section-sub-title-shape"></span>
                     </h4>
-                    <h2 class="sec-title">
+                    <h2 className="sec-title">
                       Quality Manufacturing <span>Is Our Objective</span>
                     </h2>
-                    <div class="desc">
+                    <div className="desc">
                       <p>
                         There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in
@@ -482,45 +489,45 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="about-feature-item">
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-award-fill"></i>
-                        {/* <i class="flaticon-quality"></i> */}
+                  <div className="about-feature-item">
+                    <div className="feature-item">
+                      <div className="feature-icon">
+                        <i className="bi bi-award-fill"></i>
+                        {/* <i className="flaticon-quality"></i> */}
                       </div>
-                      <div class="feature-text">
-                        <span class="feature-title">ISO Certified</span>
-                        <h4 class="title">Manufacturers</h4>
+                      <div className="feature-text">
+                        <span className="feature-title">ISO Certified</span>
+                        <h4 className="title">Manufacturers</h4>
                         <p>ISO 9022:235</p>
                       </div>
                     </div>
-                    <div class="feature-item">
-                      <div class="feature-icon">
-                        <i class="bi bi-envelope"></i>
-                        {/* <i class="flaticon-nanotechnology"></i> */}
+                    <div className="feature-item">
+                      <div className="feature-icon">
+                        <i className="bi bi-envelope"></i>
+                        {/* <i className="flaticon-nanotechnology"></i> */}
                       </div>
-                      <div class="feature-text">
-                        <span class="feature-title">High Tech</span>
-                        <h4 class="title">Manufacturers</h4>
+                      <div className="feature-text">
+                        <span className="feature-title">High Tech</span>
+                        <h4 className="title">Manufacturers</h4>
                         <p>In Europe</p>
                       </div>
                     </div>
                   </div>
-                  <div class="feature-contact">
-                    <div class="about-button">
-                      <a class="tj-primary-btn" href="about.html">
-                        Read More <i class="bi bi-arrow-bar-right"></i>
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
+                  <div className="feature-contact">
+                    <div className="about-button">
+                      <a className="tj-primary-btn" href="about.html">
+                        Read More <i className="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
                       </a>
                     </div>
-                    <div class="contact-content">
-                      <div class="contact-icon">
-                        <i class="bi bi-telephone-inbound"></i>
-                        {/* <i class="flaticon-old-typical-phone"></i> */}
+                    <div className="contact-content">
+                      <div className="contact-icon">
+                        <i className="bi bi-telephone-inbound"></i>
+                        {/* <i className="flaticon-old-typical-phone"></i> */}
                       </div>
-                      <div class="contact-text">
+                      <div className="contact-text">
                         <span>Call Us Anytime</span>
-                        <a class="link" href="tel:+00123456789">
+                        <a className="link" href="tel:+00123456789">
                           + 00-123-456-789
                         </a>
                       </div>
@@ -528,11 +535,11 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-5 col-12 order-1 order-xl-2">
-                <div class="about-images">
-                  <div class="about-circle">
+              <div className="col-xl-5 col-12 order-1 order-xl-2">
+                <div className="about-images">
+                  <div className="about-circle">
                     <svg
-                      class="rotate-image"
+                      className="rotate-image"
                       viewBox="0 0 140 100"
                       width="150"
                       height="150"
@@ -548,55 +555,55 @@ const Home = () => {
                         />
                       </defs>
                       <text font-size="12">
-                        <textPath xlinkHref="#circle" class="shape-1">
+                        <textPath xlinkHref="#circle" className="shape-1">
                           . MANUFACTURING . MANUFACTURING . MANUFACTURING
                         </textPath>
                       </text>
                     </svg>
-                    <div class="circle-image">
+                    <div className="circle-image">
                       <img src={Pic3} alt="Shape" />
                     </div>
                   </div>
-                  <div class="left-image">
+                  <div className="left-image">
                     <img src={Pic4} alt="Image" />
                   </div>
-                  <div class="right-image">
+                  <div className="right-image">
                     <img src={Pic5} alt="Image" />
                   </div>
-                  <div class="about-shape">
+                  <div className="about-shape">
                     <img src={Pic2} alt="Shape" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="sec-left-shape">
+          <div className="sec-left-shape">
             <img src={Pic7} alt="Shape" />
           </div>
-          <div class="sec-right-shape">
+          <div className="sec-right-shape">
             <img src={Pic6} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: About Section --> */}
 
         {/*  <!-- start: Service Section --> */}
-        <section class="tj-service-section dineshBackImages">
-          <div class="container">
-            <div class="row">
-              <div class="tj-heading-area">
-                <h4 class="sub-title">
+        <section className="tj-service-section dineshBackImages">
+          <div className="container">
+            <div className="row">
+              <div className="tj-heading-area">
+                <h4 className="sub-title">
                   Our Services
-                  <span class="section-sub-title-shape"></span>
+                  <span className="section-sub-title-shape"></span>
                 </h4>
-                <h2 class="sec-title">
+                <h2 className="sec-title">
                   We Work To <span>Craft</span>
                 </h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="swiper tj-service-slider">
-                  <div class="swiper-wrapper ">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="swiper tj-service-slider">
+                  <div className="swiper-wrapper ">
                     <Slider {...settings}>
                       <div className="slider-slide">
                         <div className="swiper-wrapper dineshSilder">
@@ -769,7 +776,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="service-section-shape">
+          <div className="service-section-shape">
             <img src={Pic8} alt="Shape" />
           </div>
         </section>
@@ -777,24 +784,24 @@ const Home = () => {
 
         {/* <!-- start: Video Section --> */}
         <section
-          class="tj-video-section"
+          className="tj-video-section"
           data-bg-image="assets/images/bg/video-bg.jpg"
         >
-          <div class="tj-video-area">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="video-area">
-                    <h2 class="title">Watching Video</h2>
-                    <div class="video-box">
+          <div className="tj-video-area">
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <div className="video-area">
+                    <h2 className="title">Watching Video</h2>
+                    <div className="video-box">
                       <a
-                        class="popup-videos-button"
+                        className="popup-videos-button"
                         data-autoplay="true"
                         data-vbtype="video"
                         href="https://www.youtube.com/watch?v=ADmQTw4qqTY"
                       >
-                        <i class="bi bi-play-fill"></i>
-                        {/* <i class="fa-solid fa-play"></i> */}
+                        <i className="bi bi-play-fill"></i>
+                        {/* <i className="fa-solid fa-play"></i> */}
                       </a>
                     </div>
                   </div>
@@ -802,46 +809,46 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="tj-counter-area">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="fun-fact-area">
-                    <div class="counter-item">
-                      <div class="tj-count">
-                        <span class="odometer" data-count="4323">
+          <div className="tj-counter-area">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="fun-fact-area">
+                    <div className="counter-item">
+                      <div className="tj-count">
+                        <span className="odometer" data-count="4323">
                           0
                         </span>
                         +
                       </div>
-                      <span class="sub-title">Years Experience</span>
+                      <span className="sub-title">Years Experience</span>
                     </div>
-                    <div class="counter-item">
-                      <div class="tj-count">
-                        <span class="odometer" data-count="476">
+                    <div className="counter-item">
+                      <div className="tj-count">
+                        <span className="odometer" data-count="476">
                           0
                         </span>
                         +
                       </div>
-                      <span class="sub-title">Projects Completed</span>
+                      <span className="sub-title">Projects Completed</span>
                     </div>
-                    <div class="counter-item">
-                      <div class="tj-count">
-                        <span class="odometer" data-count="539">
+                    <div className="counter-item">
+                      <div className="tj-count">
+                        <span className="odometer" data-count="539">
                           0
                         </span>
                         K
                       </div>
-                      <span class="sub-title">Happy Customers</span>
+                      <span className="sub-title">Happy Customers</span>
                     </div>
-                    <div class="counter-item">
-                      <div class="tj-count">
-                        <span class="odometer" data-count="39">
+                    <div className="counter-item">
+                      <div className="tj-count">
+                        <span className="odometer" data-count="39">
                           0
                         </span>
                         +
                       </div>
-                      <span class="sub-title">Awards Milestones</span>
+                      <span className="sub-title">Awards Milestones</span>
                     </div>
                   </div>
                 </div>
@@ -852,34 +859,34 @@ const Home = () => {
         {/* <!-- end: Video Section --> */}
 
         {/* <!-- start: Steps Section --> */}
-        <section class="tj-steps-section">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="tab-content tabs-main-content">
+        <section className="tj-steps-section">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="tab-content tabs-main-content">
                   <div
-                    class="tab-pane fade show active"
+                    className="tab-pane fade show active"
                     id="step-1"
                     role="tabpanel"
                   >
-                    <div class="row align-items-center">
-                      <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="step-content">
-                          <div class="tj-heading-area">
-                            <h4 class="sub-title">
+                    <div className="row align-items-center">
+                      <div className="col-lg-6 order-2 order-lg-1">
+                        <div className="step-content">
+                          <div className="tj-heading-area">
+                            <h4 className="sub-title">
                               Development
-                              <span class="section-sub-title-shape"></span>
+                              <span className="section-sub-title-shape"></span>
                             </h4>
-                            <h2 class="sec-title">
+                            <h2 className="sec-title">
                               How We <span>Started</span>
                             </h2>
                           </div>
-                          <div class="step-text">
-                            <h3 class="title">
+                          <div className="step-text">
+                            <h3 className="title">
                               Reached <span> Worldwide</span>
                             </h3>
-                            <span class="sub-title">Indupress Brand Name</span>
-                            <div class="desc">
+                            <span className="sub-title">Indupress Brand Name</span>
+                            <div className="desc">
                               <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -888,47 +895,47 @@ const Home = () => {
                                 English.
                               </p>
                             </div>
-                            <div class="steps-button">
-                              <a class="tj-primary-btn" href="contact.html">
+                            <div className="steps-button">
+                              <a className="tj-primary-btn" href="contact.html">
                                 More Details{" "}
-                                {/* <i class="bi bi-arrow-bar-right"></i> */}
-                                <i class="fa-light fa-arrow-right-from-line"></i>
+                                {/* <i className="bi bi-arrow-bar-right"></i> */}
+                                <i className="fa-light fa-arrow-right-from-line"></i>
                               </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="steps-images">
-                          <div class="left-image">
+                      <div className="col-lg-6 order-1 order-lg-2">
+                        <div className="steps-images">
+                          <div className="left-image">
                             <img src={Pic10} alt="Images" />
                           </div>
-                          <div class="right-image">
+                          <div className="right-image">
                             <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="step-2" role="tabpanel">
-                    <div class="row align-items-center">
-                      <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="step-content">
-                          <div class="tj-heading-area">
-                            <h4 class="sub-title">
+                  <div className="tab-pane fade" id="step-2" role="tabpanel">
+                    <div className="row align-items-center">
+                      <div className="col-lg-6 order-2 order-lg-1">
+                        <div className="step-content">
+                          <div className="tj-heading-area">
+                            <h4 className="sub-title">
                               Development
-                              <span class="section-sub-title-shape"></span>
+                              <span className="section-sub-title-shape"></span>
                             </h4>
-                            <h2 class="sec-title">
+                            <h2 className="sec-title">
                               Preparation of<span> Documents</span>
                             </h2>
                           </div>
-                          <div class="step-text">
-                            <h3 class="title">
+                          <div className="step-text">
+                            <h3 className="title">
                               Reached <span> Worldwide</span>
                             </h3>
-                            <span class="sub-title">Indupress Brand Name</span>
-                            <div class="desc">
+                            <span className="sub-title">Indupress Brand Name</span>
+                            <div className="desc">
                               <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -937,47 +944,47 @@ const Home = () => {
                                 English.
                               </p>
                             </div>
-                            <div class="steps-button">
-                              <a class="tj-primary-btn" href="#">
+                            <div className="steps-button">
+                              <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                                <i class="bi bi-arrow-bar-right"></i>
+                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="steps-images">
-                          <div class="left-image">
+                      <div className="col-lg-6 order-1 order-lg-2">
+                        <div className="steps-images">
+                          <div className="left-image">
                             <img src={pic35} alt="Images" />
                           </div>
-                          <div class="right-image">
+                          <div className="right-image">
                             <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="step-3" role="tabpanel">
-                    <div class="row align-items-center">
-                      <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="step-content">
-                          <div class="tj-heading-area">
-                            <h4 class="sub-title">
+                  <div className="tab-pane fade" id="step-3" role="tabpanel">
+                    <div className="row align-items-center">
+                      <div className="col-lg-6 order-2 order-lg-1">
+                        <div className="step-content">
+                          <div className="tj-heading-area">
+                            <h4 className="sub-title">
                               Development
-                              <span class="section-sub-title-shape"></span>
+                              <span className="section-sub-title-shape"></span>
                             </h4>
-                            <h2 class="sec-title">
+                            <h2 className="sec-title">
                               How We <span>Started</span>
                             </h2>
                           </div>
-                          <div class="step-text">
-                            <h3 class="title">
+                          <div className="step-text">
+                            <h3 className="title">
                               Reached <span> Worldwide</span>
                             </h3>
-                            <span class="sub-title">Indupress Brand Name</span>
-                            <div class="desc">
+                            <span className="sub-title">Indupress Brand Name</span>
+                            <div className="desc">
                               <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -986,47 +993,47 @@ const Home = () => {
                                 English.
                               </p>
                             </div>
-                            <div class="steps-button">
-                              <a class="tj-primary-btn" href="#">
+                            <div className="steps-button">
+                              <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                                <i class="bi bi-arrow-bar-right"></i>
+                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="steps-images">
-                          <div class="left-image">
+                      <div className="col-lg-6 order-1 order-lg-2">
+                        <div className="steps-images">
+                          <div className="left-image">
                             <img src={Pic10} alt="Images" />
                           </div>
-                          <div class="right-image">
+                          <div className="right-image">
                             <img src={Pic12} alt="Images" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="step-4" role="tabpanel">
-                    <div class="row align-items-center">
-                      <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="step-content">
-                          <div class="tj-heading-area">
-                            <h4 class="sub-title">
+                  <div className="tab-pane fade" id="step-4" role="tabpanel">
+                    <div className="row align-items-center">
+                      <div className="col-lg-6 order-2 order-lg-1">
+                        <div className="step-content">
+                          <div className="tj-heading-area">
+                            <h4 className="sub-title">
                               Development
-                              <span class="section-sub-title-shape"></span>
+                              <span className="section-sub-title-shape"></span>
                             </h4>
-                            <h2 class="sec-title">
+                            <h2 className="sec-title">
                               Preparation of<span> Documents</span>
                             </h2>
                           </div>
-                          <div class="step-text">
-                            <h3 class="title">
+                          <div className="step-text">
+                            <h3 className="title">
                               Reached <span> Worldwide</span>
                             </h3>
-                            <span class="sub-title">Indupress Brand Name</span>
-                            <div class="desc">
+                            <span className="sub-title">Indupress Brand Name</span>
+                            <div className="desc">
                               <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -1035,22 +1042,22 @@ const Home = () => {
                                 English.
                               </p>
                             </div>
-                            <div class="steps-button">
-                              <a class="tj-primary-btn" href="#">
+                            <div className="steps-button">
+                              <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                                <i class="bi bi-arrow-bar-right"></i>
+                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="steps-images">
-                          <div class="left-image">
+                      <div className="col-lg-6 order-1 order-lg-2">
+                        <div className="steps-images">
+                          <div className="left-image">
                             <img src={pic35} alt="Images" />
                           </div>
-                          <div class="right-image">
+                          <div className="right-image">
                             <img src={Pic12} alt="Images" />
                           </div>
                         </div>
@@ -1060,63 +1067,63 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="tabs-area" role="tablist">
+            <div className="row">
+              <div className="tabs-area" role="tablist">
                 <button
-                  class="step active"
+                  className="step active"
                   data-bs-toggle="tab"
                   data-bs-target="#step-1"
                   type="button"
                   role="tab"
                   aria-selected="true"
                 >
-                  <span class="number">1849</span>
-                  <span class="line"></span>
-                  <span class="title">Seed Stage</span>
+                  <span className="number">1849</span>
+                  <span className="line"></span>
+                  <span className="title">Seed Stage</span>
                 </button>
                 <button
-                  class="step"
+                  className="step"
                   data-bs-toggle="tab"
                   data-bs-target="#step-2"
                   type="button"
                   role="tab"
                   aria-selected="false"
                 >
-                  <span class="number">1949</span>
-                  <span class="line"></span>
-                  <span class="title">Seed Stage</span>
+                  <span className="number">1949</span>
+                  <span className="line"></span>
+                  <span className="title">Seed Stage</span>
                 </button>
                 <button
-                  class="step"
+                  className="step"
                   data-bs-toggle="tab"
                   data-bs-target="#step-3"
                   type="button"
                   role="tab"
                   aria-selected="false"
                 >
-                  <span class="number">2001</span>
-                  <span class="line"></span>
-                  <span class="title">Seed Stage</span>
+                  <span className="number">2001</span>
+                  <span className="line"></span>
+                  <span className="title">Seed Stage</span>
                 </button>
                 <button
-                  class="step"
+                  className="step"
                   data-bs-toggle="tab"
                   data-bs-target="#step-4"
                   type="button"
                   role="tab"
                   aria-selected="false"
                 >
-                  <span class="number">2023</span>
-                  <span class="line"></span>
-                  <span class="title">Seed Stage</span>
+                  <span className="number">2023</span>
+                  <span className="line"></span>
+                  <span className="title">Seed Stage</span>
                 </button>
               </div>
             </div>
           </div>
-          <div class="steps-sec-left-shape">
+          <div className="steps-sec-left-shape">
             <img src="assets/images/shapes/steps-left-shape.svg" alt="Shape" />
           </div>
-          <div class="steps-sec-right-shape">
+          <div className="steps-sec-right-shape">
             <img src={Pic11} alt="Shape" />
           </div>
         </section>
@@ -1124,23 +1131,23 @@ const Home = () => {
 
         {/* <!-- start: Analysis Section --> */}
         <section
-          class="tj-analysis-section"
+          className="tj-analysis-section"
           data-bg-image="assets/images/bg/analysis-bg.jpg"
         >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6"></div>
-              <div class="col-lg-6">
-                <div class="analysis-content">
-                  <div class="tj-heading-area">
-                    <h4 class="sub-title">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6"></div>
+              <div className="col-lg-6">
+                <div className="analysis-content">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
                       Analysis
-                      <span class="section-sub-title-shape"></span>
+                      <span className="section-sub-title-shape"></span>
                     </h4>
-                    <h2 class="sec-title">
+                    <h2 className="sec-title">
                       Implemetation <span>Analysis</span>
                     </h2>
-                    <div class="desc">
+                    <div className="desc">
                       <p>
                         It is a long established fact that a reader will be
                         distracted by the readable content of a page when
@@ -1149,29 +1156,29 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="analysis-list">
-                    <ul class="dot-style">
+                  <div className="analysis-list">
+                    <ul className="dot-style">
                       <li>Elementum nibh tellis</li>
                       <li>Sed id semper risus in hendrert</li>
                     </ul>
-                    <div class="analysis-button">
-                      <a class="tj-primary-btn" href="contact.html">
+                    <div className="analysis-button">
+                      <a className="tj-primary-btn" href="contact.html">
                         More Details{" "}
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="analysis-wrapper">
-                    <h3 class="title">Measuring Information</h3>
-                    <div class="desc">
+                  <div className="analysis-wrapper">
+                    <h3 className="title">Measuring Information</h3>
+                    <div className="desc">
                       <p>
                         It is a long established fact that a reader will be
                         distracted by the readable content of a page when
                         looking at its layout.
                       </p>
                     </div>
-                    <div class="analysis-chart">
+                    <div className="analysis-chart">
                       <img src={pic13} alt="Images" />
                     </div>
                   </div>
@@ -1183,169 +1190,169 @@ const Home = () => {
         {/* <!-- end: Analysis Section --> */}
         {/* 
          <!-- start: Price Section --> */}
-        <section class="tj-price-section">
-          <div class="container">
-            <div class="row">
-              <div class="tj-heading-area">
-                <h4 class="sub-title">
+        <section className="tj-price-section">
+          <div className="container">
+            <div className="row">
+              <div className="tj-heading-area">
+                <h4 className="sub-title">
                   Pricetable
-                  <span class="section-sub-title-shape"></span>
+                  <span className="section-sub-title-shape"></span>
                 </h4>
-                <h2 class="sec-title">
+                <h2 className="sec-title">
                   Choose a Plan That Perfect <span>Works For You</span>
                 </h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="price-item">
-                  <div class="top-content">
-                    <h3 class="title">
-                      Basic <span class="date">/month</span>
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="price-item">
+                  <div className="top-content">
+                    <h3 className="title">
+                      Basic <span className="date">/month</span>
                     </h3>
-                    <span class="price">59$</span>
+                    <span className="price">59$</span>
                   </div>
-                  <div class="check-list">
-                    <ul class="dot-style">
-                      <li class="style-1">
+                  <div className="check-list">
+                    <ul className="dot-style">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Blandit massa enim nec
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Orci dapibus ultrices in
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Elementum nisi eleifend
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Sed turpis tincidunt id
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Egestas congues quisqie
                       </li>
                     </ul>
                   </div>
-                  <div class="price-button text-center">
-                    <a class="tj-light-button" href="price.html">
+                  <div className="price-button text-center">
+                    <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                      <i class="bi bi-arrow-bar-right"></i>
+                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="price-item active-item">
-                  <div class="top-content">
-                    <h3 class="title">
-                      Premium <span class="date">/month</span>
+              <div className="col-lg-4 col-md-6">
+                <div className="price-item active-item">
+                  <div className="top-content">
+                    <h3 className="title">
+                      Premium <span className="date">/month</span>
                     </h3>
-                    <span class="price">75$</span>
+                    <span className="price">75$</span>
                   </div>
-                  <div class="check-list">
-                    <ul class="dot-style">
-                      <li class="style-1">
+                  <div className="check-list">
+                    <ul className="dot-style">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Blandit massa enim nec
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Orci dapibus ultrices in
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Elementum nisi eleifend
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Sed turpis tincidunt id
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Egestas congues quisqie
                       </li>
                     </ul>
                   </div>
-                  <div class="price-button text-center">
-                    <a class="tj-light-button" href="price.html">
+                  <div className="price-button text-center">
+                    <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                      <i class="bi bi-arrow-bar-right"></i>
+                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="price-item">
-                  <div class="top-content">
-                    <h3 class="title">
-                      Standard <span class="date">/month</span>
+              <div className="col-lg-4 col-md-6">
+                <div className="price-item">
+                  <div className="top-content">
+                    <h3 className="title">
+                      Standard <span className="date">/month</span>
                     </h3>
-                    <span class="price">95$</span>
+                    <span className="price">95$</span>
                   </div>
-                  <div class="check-list">
-                    <ul class="dot-style">
-                      <li class="style-1">
+                  <div className="check-list">
+                    <ul className="dot-style">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Blandit massa enim nec
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Orci dapibus ultrices in
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Elementum nisi eleifend
                       </li>
-                      <li class="style-2">
+                      <li className="style-2">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Sed turpis tincidunt id
                       </li>
-                      <li class="style-1">
+                      <li className="style-1">
                         <span>
-                          <i class="fa-light fa-check"></i>
+                          <i className="fa-light fa-check"></i>
                         </span>
                         Egestas congues quisqie
                       </li>
                     </ul>
                   </div>
-                  <div class="price-button text-center">
-                    <a class="tj-light-button" href="price.html">
+                  <div className="price-button text-center">
+                    <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                      <i class="bi bi-arrow-bar-right"></i>
+                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
                 </div>
@@ -1356,260 +1363,240 @@ const Home = () => {
         {/* <!-- end: Price Section --> */}
 
         {/* <!-- start: Portfolio Section --> */}
-        <section class="tj-portfolio-section">
-          <div class="container">
-            <div class="row">
-              <div class="tj-heading-area">
-                <h4 class="sub-title">
+        <section className="tj-portfolio-section">
+          <div className="container">
+            <div className="row">
+              <div className="tj-heading-area">
+                <h4 className="sub-title">
                   Project
-                  <span class="section-sub-title-shape"></span>
+                  <span className="section-sub-title-shape"></span>
                 </h4>
-                <h2 class="sec-title">
+                <h2 className="sec-title">
                   Recently Completed <span>Projects Gallery</span>
                 </h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="swiper swiper-container tj-portfolio-slider">
-                  <div class=" portfolio_dinesh">
-                    <div class="testimonial-prev">
-                      {/* <i class="flaticon-right-arrow"></i> */}
+            <div className="row">
+              <div className="col-12">
+                <div className="swiper swiper-container tj-portfolio-slider">
+                  <div className=" portfolio_dinesh">
+                    <div className="testimonial-prev">
                       <button onClick={goToPrevSlide}>
-                        {" "}
-                        <i class="bi bi-arrow-left"></i>{" "}
+                        <i className="bi bi-arrow-left"></i>{" "}
                       </button>
-                      {/* <i class="bi bi-arrow-left"></i> */}
-                      {/* <i class="bi bi-arrow-right"></i> */}
                     </div>
-                    <div class="testimonial-next">
-                      {/* <i class="flaticon-right-arrow"></i> */}
-                      {/* <i class="bi bi-arrow-left"></i> */}
+                    <div className="testimonial-next">
                       <button onClick={goToNextSlide}>
-                        <i class="bi bi-arrow-right"></i>{" "}
+                        <i className="bi bi-arrow-right"></i>{" "}
                       </button>
                     </div>
                   </div>
-                  <div class="swiper-wrapper dineshFlex">
-                    <div class="swiper-slide dineshwidth">
-                      <div class="portfolio-item dineshwidth12">
-                        {item.map((items, index) => (
-                          <div  className={`slide ${
-                            index === currentIndex ? "active" : "unactive"
-                             }`}>
-                            <div
-                              class="portfolio-image dineshImage"
-                             
-                            > 
-                              <img src={items.image} alt="" />
-                            </div>
-                            <div class="portfolio-content">
-                              <h4 class="title">
-                                <a href="#">{items.title}</a>
-                              </h4>
-                              <span class="sub-title"> {items.subtitle}</span>
-                            </div>
-                          </div>
-                        ))}
+                  <div className="swiper-wrapper dineshFlex">
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
+                            <a href="#">Bradley</a>
+                          </h4>
+                          <span className="sub-title">Cement, Petrochemical</span>
+                        </div>
                       </div>
                     </div>
-                    {/* <div class="swiper-slide dineshwidth">
-                      <div class="portfolio-item dineshwidth12">
-                        <div
-                          class="portfolio-image dineshImage12"
-                          data-bg-image="assets/images/portfolio/portfolio-2.jpg"
-                        ></div>
-                        <div class="portfolio-content">
-                          <h4 class="title">
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage12"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
                             <a href="#">Aurthur Barry</a>
                           </h4>
-                          <span class="sub-title">Sugar, Distillery</span>
+                          <span className="sub-title">Sugar, Distillery</span>
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide dineshwidth">
-                      <div class="portfolio-item dineshwidth12">
-                        <div
-                          class="portfolio-image dineshImage13"
-                          data-bg-image="assets/images/portfolio/portfolio-3.jpg"
-                        ></div>
-                        <div class="portfolio-content">
-                          <h4 class="title">
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage13"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
                             <a href="#">Louis Miller</a>
                           </h4>
-                          <span class="sub-title">Sugar, Petrochemical</span>
+                          <span className="sub-title">Sugar, Petrochemical</span>
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide dineshwidth">
-                      <div class="portfolio-item dineshwidth12">
-                        <div
-                          class="portfolio-image dineshImage14"
-                          data-bg-image="assets/images/portfolio/portfolio-4.jpg"
-                        ></div>
-                        <div class="portfolio-content">
-                          <h4 class="title">
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage14"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
                             <a href="#">Grey George</a>
                           </h4>
-                          <span class="sub-title">Sugar, Cement</span>
+                          <span className="sub-title">Sugar, Cement</span>
                         </div>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="portfolio-sec-top-shape">
+          <div className="portfolio-sec-top-shape">
             <img src={pic14} alt="Shape" />
           </div>
-          <div class="portfolio-sec-bottom-shape">
+          <div className="portfolio-sec-bottom-shape">
             <img src={pic15} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: Portfolio Section --> */}
 
         {/* <!-- start: Testimonial Section --> */}
-        <section class="tj-testimonial-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5"></div>
-              <div class="col-lg-7">
-                <div class="tj-heading-area">
-                  <h4 class="sub-title">
+        <section className="tj-testimonial-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-5"></div>
+              <div className="col-lg-7">
+                <div className="tj-heading-area">
+                  <h4 className="sub-title">
                     Reviews
-                    <span class="section-sub-title-shape"></span>
+                    <span className="section-sub-title-shape"></span>
                   </h4>
-                  <h2 class="sec-title">
+                  <h2 className="sec-title">
                     Happy Clients <span>Thoughts</span>
                   </h2>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <div class="testimonial-wrapper">
-                  <div class="row align-items-end">
-                    <div class="col-lg-4 offset-lg-1">
-                      <div class="swiper testimonial-auother-slider">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide testimonial-auother">
-                            <div class="thumb-image">
+            <div className="row">
+              <div className="col">
+                <div className="testimonial-wrapper">
+                  <div className="row align-items-end">
+                    <div className="col-lg-4 offset-lg-1">
+                      <div className="swiper testimonial-auother-slider">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide testimonial-auother">
+                            <div className="thumb-image">
                               <img src={Pic16} alt="Image" />
-                              <div class="quote-icon">
+                              <div className="quote-icon">
                                 <img src={pic17} alt="Icon" />
                               </div>
                             </div>
-                            <div class="testimonial-name">
-                              <h3 class="title">David,</h3>
-                              <span class="sub-title">Desinger</span>
+                            <div className="testimonial-name">
+                              <h3 className="title">David,</h3>
+                              <span className="sub-title">Desinger</span>
                             </div>
-                            <div class="testimonial-info">
-                              <div class="testimonial-rating">
-                                <div class="star-ratings">
-                                  {/* <div class="fill-ratings" style="width: 73%"> */}
-                                  <div class="fill-ratings">
+                            <div className="testimonial-info">
+                              <div className="testimonial-rating">
+                                <div className="star-ratings">
+                                  {/* <div className="fill-ratings" style="width: 73%"> */}
+                                  <div className="fill-ratings">
                                     <span>★★★★★</span>
                                   </div>
-                                  <div class="empty-ratings">
+                                  <div className="empty-ratings">
                                     <span>★★★★★</span>
                                   </div>
                                 </div>
                               </div>
-                              <div class="testimonial-socials">
-                                <ul class="dot-style">
+                              <div className="testimonial-socials">
+                                <ul className="dot-style">
                                   <li>
                                     <a href="#">
-                                      {/* <i class="fa-brands fa-x-twitter"></i> */}
-                                      <i class="bi bi-twitter-x"></i>
+                                      {/* <i className="fa-brands fa-x-twitter"></i> */}
+                                      <i className="bi bi-twitter-x"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i class="fa-brands fa-whatsapp"></i> */}
-                                      <i class="bi bi-whatsapp"></i>
+                                      {/* <i className="fa-brands fa-whatsapp"></i> */}
+                                      <i className="bi bi-whatsapp"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i class="fa-brands fa-instagram"></i> */}
-                                      <i class="bi bi-instagram"></i>
+                                      {/* <i className="fa-brands fa-instagram"></i> */}
+                                      <i className="bi bi-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i class="fa-brands fa-facebook-f"></i> */}
-                                      <i class="bi bi-facebook"></i>
+                                      {/* <i className="fa-brands fa-facebook-f"></i> */}
+                                      <i className="bi bi-facebook"></i>
                                     </a>
                                   </li>
                                 </ul>
                               </div>
                             </div>
                           </div>
-                          {/* <div class="swiper-slide testimonial-auother">
-                            <div class="thumb-image">
-                              <img
-                                src={Pic16}
-                                alt="Image"
-                              />
-                              <div class="quote-icon">
-                                <img
-                                  src={pic17}
-                                  alt="Icon"
-                                />
-                              </div>
-                            </div>
-                            <div class="testimonial-name">
-                              <h3 class="title">David,</h3>
-                              <span class="sub-title">Desinger</span>
-                            </div>
-                            <div class="testimonial-info">
-                              <div class="testimonial-rating">
-                                <div class="star-ratings">
-                                  <div class="fill-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
-                                  <div class="empty-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
+                          {/* <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="Image" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
                                 </div>
                               </div>
-                              <div class="testimonial-socials">
-                                <ul class="dot-style">
-                                  <li>
-                                    <a href="#">
-                                      <i class="bi bi-twitter-x"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                   
-                                      <i class="bi bi-instagram"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      
-                                      <i class="bi bi-facebook"></i>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div className="testimonial-name">
+                                <h3 className="title">David,</h3>
+                                <span className="sub-title">Desinger</span>
                               </div>
-                            </div>
-                          </div> */}
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div> */}
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-7">
-                      <div class="swiper thumb-content-slider">
-                        <div class="swiper-wrapper">
-                          {/* <div class="swiper-slide">
-                            <div class="testimonial-content-slider">
+                    <div className="col-lg-7">
+                      <div className="swiper thumb-content-slider">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide">
+                            <div className="testimonial-content-slider">
+                              <p>
+                                ‘’There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or
+                                randomised words which don't look even slightly
+                                believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of
+                                text.’’
+                              </p>
+                            </div>
+                          </div>
+                          {/* <div className="swiper-slide">
+                            <div className="testimonial-content-slider">
                               <p>
                                 ‘’There are many variations of passages of Lorem
                                 Ipsum available, but the majority have suffered
@@ -1622,27 +1609,13 @@ const Home = () => {
                               </p>
                             </div>
                           </div> */}
-                          <div class="swiper-slide">
-                            <div class="testimonial-content-slider">
-                              <p>
-                                ‘’There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text.’’
-                              </p>
-                            </div>
-                          </div>
                         </div>
-                        <div class="testimonial-navigation">
-                          <div class="testimonial-prev">
-                            <i class="flaticon-right-arrow"></i>
+                        <div className="testimonial-navigation">
+                          <div className="testimonial-prev">
+                            <i className="flaticon-right-arrow"></i>
                           </div>
-                          <div class="testimonial-next">
-                            <i class="flaticon-right-arrow"></i>
+                          <div className="testimonial-next">
+                            <i className="flaticon-right-arrow"></i>
                           </div>
                         </div>
                       </div>
@@ -1652,38 +1625,38 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="testimonial-sec-top-shape">
+          <div className="testimonial-sec-top-shape">
             <img src={pic18} alt="Images" />
           </div>
-          <div class="testimonial-sec-bottom-shape">
+          <div className="testimonial-sec-bottom-shape">
             <img src={pic19} alt="Images" />
           </div>
         </section>
         {/* <!-- end: Testimonial Section --> */}
 
         {/* <!-- start: Faq Section --> */}
-        <section class="tj-faq-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="tj-heading-area">
-                  <h4 class="sub-title">
+        <section className="tj-faq-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="tj-heading-area">
+                  <h4 className="sub-title">
                     Our Experts Answers
-                    <span class="section-sub-title-shape"></span>
+                    <span className="section-sub-title-shape"></span>
                   </h4>
-                  <h2 class="sec-title">
+                  <h2 className="sec-title">
                     Freqently Asked <span>Questions</span>
                   </h2>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="accordion tj-faq" id="faqOne">
-                  {/* <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+            <div className="row">
+              <div className="col-lg-7">
+                <div className="accordion tj-faq" id="faqOne">
+                  {/* <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class="accordion-button"
+                        className="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
@@ -1695,17 +1668,17 @@ const Home = () => {
                     </h2>
                     <div
                       id="collapseOne"
-                      class="accordion-collapse collapse show"
+                      className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           This is the first item's accordion body.
                         </strong>{" "}
                         It is shown by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
+                        the appropriate classNamees that we use to style each
+                        element. These classNamees control the overall appearance,
                         as well as the showing and hiding via CSS transitions.
                         You can modify any of this with custom CSS or overriding
                         our default variables. It's also worth noting that just
@@ -1715,9 +1688,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div> */}
-                  <div class="faq-item">
+                  <div className="faq-item">
                     <button
-                      class="faq-title"
+                      className="faq-title"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-1"
@@ -1727,10 +1700,10 @@ const Home = () => {
                     </button>
                     <div
                       id="faq-1"
-                      class="collapse show"
+                      className="collapse show"
                       data-bs-parent="#faqOne"
                     >
-                      <div class="accordion-body faq-text">
+                      <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
                           sometimes by accident, sometimes on purpose
@@ -1739,9 +1712,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item">
+                  <div className="faq-item">
                     <button
-                      class="faq-title collapsed"
+                      className="faq-title collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-2"
@@ -1749,8 +1722,8 @@ const Home = () => {
                     >
                       2. How does production planning work?
                     </button>
-                    <div id="faq-2" class="collapse" data-bs-parent="#faqOne">
-                      <div class="accordion-body faq-text">
+                    <div id="faq-2" className="collapse" data-bs-parent="#faqOne">
+                      <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
                           sometimes by accident, sometimes on purpose
@@ -1759,9 +1732,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item">
+                  <div className="faq-item">
                     <button
-                      class="faq-title collapsed"
+                      className="faq-title collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-3"
@@ -1769,8 +1742,8 @@ const Home = () => {
                     >
                       3. What is the manufacturing sector’s function ?
                     </button>
-                    <div id="faq-3" class="collapse" data-bs-parent="#faqOne">
-                      <div class="accordion-body faq-text">
+                    <div id="faq-3" className="collapse" data-bs-parent="#faqOne">
+                      <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
                           sometimes by accident, sometimes on purpose
@@ -1779,9 +1752,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item">
+                  <div className="faq-item">
                     <button
-                      class="faq-title collapsed"
+                      className="faq-title collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-4"
@@ -1789,8 +1762,8 @@ const Home = () => {
                     >
                       4. What is the benefit of implementation industry ?
                     </button>
-                    <div id="faq-4" class="collapse" data-bs-parent="#faqOne">
-                      <div class="accordion-body faq-text">
+                    <div id="faq-4" className="collapse" data-bs-parent="#faqOne">
+                      <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
                           sometimes by accident, sometimes on purpose
@@ -1799,9 +1772,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item">
+                  <div className="faq-item">
                     <button
-                      class="faq-title collapsed"
+                      className="faq-title collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-5"
@@ -1809,8 +1782,8 @@ const Home = () => {
                     >
                       5. Where can i find information a robot in the industry ?
                     </button>
-                    <div id="faq-5" class="collapse" data-bs-parent="#faqOne">
-                      <div class="accordion-body faq-text">
+                    <div id="faq-5" className="collapse" data-bs-parent="#faqOne">
+                      <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
                           sometimes by accident, sometimes on purpose
@@ -1821,14 +1794,14 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5">
+              <div className="col-lg-5">
                 <form>
-                  <div class="contact-form-box">
-                    <div class="contact-content">
-                      <span class="sub-title">Contact Us</span>
-                      <h3 class="title">Get a CallBack</h3>
+                  <div className="contact-form-box">
+                    <div className="contact-content">
+                      <span className="sub-title">Contact Us</span>
+                      <h3 className="title">Get a CallBack</h3>
                     </div>
-                    <div class="form-input">
+                    <div className="form-input">
                       <input
                         type="text"
                         id="name"
@@ -1837,7 +1810,7 @@ const Home = () => {
                         required
                       />
                     </div>
-                    <div class="form-input">
+                    <div className="form-input">
                       <input
                         type="email"
                         id="email"
@@ -1846,7 +1819,7 @@ const Home = () => {
                         required
                       />
                     </div>
-                    <div class="form-input">
+                    <div className="form-input">
                       <input
                         type="tel"
                         id="tel"
@@ -1855,7 +1828,7 @@ const Home = () => {
                         required
                       />
                     </div>
-                    <div class="form-input">
+                    <div className="form-input">
                       <input
                         type="text"
                         id="regular"
@@ -1864,15 +1837,15 @@ const Home = () => {
                         required
                       />
                     </div>
-                    <div class="form-input">
+                    <div className="form-input">
                       <textarea
                         name="country"
                         id="country"
                         placeholder="Country"
                       ></textarea>
                     </div>
-                    <div class="submit-button">
-                      <button class="tj-primary-btn">Sent Message</button>
+                    <div className="submit-button">
+                      <button className="tj-primary-btn">Sent Message</button>
                     </div>
                   </div>
                 </form>
@@ -1883,215 +1856,215 @@ const Home = () => {
         {/* <!-- end: Faq Section --> */}
 
         {/* <!-- start: Blog Section --> */}
-        <section class="tj-blog-section">
-          <div class="container">
-            <div class="blog-top-content">
-              <div class="tj-heading-area">
-                <h4 class="sub-title">
+        <section className="tj-blog-section">
+          <div className="container">
+            <div className="blog-top-content">
+              <div className="tj-heading-area">
+                <h4 className="sub-title">
                   News Feeds
-                  <span class="section-sub-title-shape"></span>
+                  <span className="section-sub-title-shape"></span>
                 </h4>
-                <h2 class="sec-title">
+                <h2 className="sec-title">
                   Blog & Insights <span>Professionals</span>
                 </h2>
               </div>
-              <div class="blog-desc">
+              <div className="blog-desc">
                 <p>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                  <div class="blog-image">
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="blog-item">
+                  <div className="blog-image">
                     <a href="blog-details.html">
                       <img src={pic20} alt="Images" />
                     </a>
                   </div>
-                  <div class="blog-content">
-                    <div class="post-meta">
+                  <div className="blog-content">
+                    <div className="post-meta">
                       <ul>
                         <li>
                           <span>
-                            {/* <i class="flaticon-user"></i> */}
-                            <i class="bi bi-person-fill"></i>
+                            {/* <i className="flaticon-user"></i> */}
+                            <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="blog-details.html">Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i class="fa-solid fa-comments"></i> */}
-                            <i class="bi bi-chat"></i>
+                            {/* <i className="fa-solid fa-comments"></i> */}
+                            <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
                       </ul>
                     </div>
-                    <h4 class="title">
+                    <h4 className="title">
                       <a href="blog-details.html">
                         Then They Need To Establish a Company Branch
                       </a>
                     </h4>
-                    <div class="blog-button">
-                      <a class="tj-secondary-btn" href="blog-details.html">
+                    <div className="blog-button">
+                      <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="blog-date">
-                    <span class="date">01</span>
-                    <span class="month">Jun</span>
+                  <div className="blog-date">
+                    <span className="date">01</span>
+                    <span className="month">Jun</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                  <div class="blog-image">
+              <div className="col-lg-4 col-md-6">
+                <div className="blog-item">
+                  <div className="blog-image">
                     <a href="blog-details.html">
                       <img src={pic21} alt="Images" />
                     </a>
                   </div>
-                  <div class="blog-content">
-                    <div class="post-meta">
+                  <div className="blog-content">
+                    <div className="post-meta">
                       <ul>
                         <li>
                           <span>
-                            {/* <i class="flaticon-user"></i> */}
-                            <i class="bi bi-person-fill"></i>
+                            {/* <i className="flaticon-user"></i> */}
+                            <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i class="fa-solid fa-comments"></i> */}
-                            <i class="bi bi-chat"></i>
+                            {/* <i className="fa-solid fa-comments"></i> */}
+                            <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
                       </ul>
                     </div>
-                    <h4 class="title">
+                    <h4 className="title">
                       <a href="blog-details.html">
                         If any Construction Company Wishes to commence its
                       </a>
                     </h4>
-                    <div class="blog-button">
-                      <a class="tj-secondary-btn" href="blog-details.html">
+                    <div className="blog-button">
+                      <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="blog-date">
-                    <span class="date">05</span>
-                    <span class="month">Feb</span>
+                  <div className="blog-date">
+                    <span className="date">05</span>
+                    <span className="month">Feb</span>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="blog-item">
-                  <div class="blog-image">
+              <div className="col-lg-4 col-md-6">
+                <div className="blog-item">
+                  <div className="blog-image">
                     <a href="blog-details.html">
                       <img src={pic22} alt="Images" />
                     </a>
                   </div>
-                  <div class="blog-content">
-                    <div class="post-meta">
+                  <div className="blog-content">
+                    <div className="post-meta">
                       <ul>
                         <li>
                           <span>
-                            {/* <i class="flaticon-user"></i> */}
-                            <i class="bi bi-person-fill"></i>
+                            {/* <i className="flaticon-user"></i> */}
+                            <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i class="fa-solid fa-comments"></i> */}
-                            <i class="bi bi-chat"></i>
+                            {/* <i className="fa-solid fa-comments"></i> */}
+                            <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
                         </li>
                       </ul>
                     </div>
-                    <h4 class="title">
+                    <h4 className="title">
                       <a href="blog-details.html">
                         How To Build and Launch Powerful Websites
                       </a>
                     </h4>
-                    <div class="blog-button">
-                      <a class="tj-secondary-btn" href="blog-details.html">
+                    <div className="blog-button">
+                      <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i class="fa-light fa-arrow-right-from-line"></i> */}
-                        <i class="bi bi-arrow-bar-right"></i>
+                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="blog-date">
-                    <span class="date">08</span>
-                    <span class="month">Nov</span>
+                  <div className="blog-date">
+                    <span className="date">08</span>
+                    <span className="month">Nov</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="blog-sec-shape">
+          <div className="blog-sec-shape">
             <img src={pic23} alt="Shape" />
           </div>
         </section>
         {/* <!-- end: Blog Section --> */}
 
         {/* <!-- start: Brand Section --> */}
-        <section class="tj-brand-section">
-          <div class="container">
-            <div class="tj-heading-area">
-              <h4 class="sub-title">
+        <section className="tj-brand-section">
+          <div className="container">
+            <div className="tj-heading-area">
+              <h4 className="sub-title">
                 Top Brands
-                <span class="section-sub-title-shape"></span>
+                <span className="section-sub-title-shape"></span>
               </h4>
-              <h2 class="sec-title">
+              <h2 className="sec-title">
                 Our Trusted <span>Partners</span>
               </h2>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="swiper tj-brand-slider">
-                  <div class="swiper-wrapper dineshborder">
-                    <div class="swiper-slide">
-                      <div class="brand-item">
+            <div className="row">
+              <div className="col-12">
+                <div className="swiper tj-brand-slider">
+                  <div className="swiper-wrapper dineshborder">
+                    <div className="swiper-slide">
+                      <div className="brand-item">
                         <a href="#">
                           <img src={pic24} alt="Images" />
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="brand-item">
+                    <div className="swiper-slide">
+                      <div className="brand-item">
                         <a href="#">
                           <img src={pic25} alt="Images" />
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="brand-item">
+                    <div className="swiper-slide">
+                      <div className="brand-item">
                         <a href="#">
                           <img src={pic26} alt="Images" />
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="brand-item">
+                    <div className="swiper-slide">
+                      <div className="brand-item">
                         <a href="#">
                           <img src={pic27} alt="Images" />
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="brand-item">
+                    <div className="swiper-slide">
+                      <div className="brand-item">
                         <a href="#">
                           <img src={pic28} alt="Images" />
                         </a>
@@ -2106,26 +2079,26 @@ const Home = () => {
         {/* <!-- end: Brand Section --> */}
 
         {/* <!-- start: Newsletter Section --> */}
-        <section class="tj-newsletter-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="newsletter-content-area">
-                  <div class="tj-heading-area">
-                    <h4 class="sub-title">
+        <section className="tj-newsletter-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="newsletter-content-area">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
                       Newsletter Subscription
-                      <span class="section-sub-title-shape"></span>
+                      <span className="section-sub-title-shape"></span>
                     </h4>
-                    <h2 class="sec-title">
+                    <h2 className="sec-title">
                       Get Instant Industrial <span>Updates!</span>
                     </h2>
-                    <div class="left-icon">
+                    <div className="left-icon">
                       <img src={pic29} alt="Icon" />
                     </div>
                   </div>
-                  <div class="contact-form-style-2">
+                  <div className="contact-form-style-2">
                     <form>
-                      <div class="form-input">
+                      <div className="form-input">
                         <input
                           type="email"
                           id="emailTwo"
@@ -2133,11 +2106,11 @@ const Home = () => {
                           placeholder="Enter Mail ID"
                           required=""
                         />
-                        <button class="tj-primary-btn d-none d-sm-inline-block">
+                        <button className="tj-primary-btn d-none d-sm-inline-block">
                           Subscribe
                         </button>
                       </div>
-                      <div class="input-checkbox">
+                      <div className="input-checkbox">
                         <input
                           id="checkbox"
                           name="checkbox"
@@ -2149,11 +2122,11 @@ const Home = () => {
                           Policy{" "}
                         </label>
                       </div>
-                      <button class="tj-primary-btn d-sm-none">
+                      <button className="tj-primary-btn d-sm-none">
                         Subscribe
                       </button>
                     </form>
-                    <div class="right-icon">
+                    <div className="right-icon">
                       <img src={pic30} alt="Icon" />
                     </div>
                   </div>
@@ -2166,49 +2139,49 @@ const Home = () => {
       </main>
 
       {/* <!-- start: Footer Area --> */}
-      <footer class="tj-footer-area footer-1">
-        <div class="footer-top-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="footer-widget footer1-col-1">
-                  <div class="footer-info">
-                    <div class="footer-logo">
-                      <a class="logo" href="index.html">
+      <footer className="tj-footer-area footer-1">
+        <div className="footer-top-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="footer-widget footer1-col-1">
+                  <div className="footer-info">
+                    <div className="footer-logo">
+                      <a className="logo" href="index.html">
                         <img src={pic32} alt="Logo" />
                       </a>
                     </div>
-                    <div class="desc">
+                    <div className="desc">
                       <p>
                         The point of using Lorem Ipsum is that it has a
                         more-or-less normal distribution of letters, as opposed
                         to using 'Content here.
                       </p>
                     </div>
-                    <div class="footer-share">
+                    <div className="footer-share">
                       <ul>
                         <li>
                           <a href="#">
-                            {/* <i class="fa-brands fa-x-twitter"></i> */}
-                            <i class="bi bi-twitter-x"></i>
+                            {/* <i className="fa-brands fa-x-twitter"></i> */}
+                            <i className="bi bi-twitter-x"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i class="fa-brands fa-whatsapp"></i> */}
-                            <i class="bi bi-whatsapp"></i>
+                            {/* <i className="fa-brands fa-whatsapp"></i> */}
+                            <i className="bi bi-whatsapp"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i class="fa-brands fa-instagram"></i> */}
-                            <i class="bi bi-instagram"></i>
+                            {/* <i className="fa-brands fa-instagram"></i> */}
+                            <i className="bi bi-instagram"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i class="fa-brands fa-facebook-f"></i> */}
-                            <i class="bi bi-facebook"></i>
+                            {/* <i className="fa-brands fa-facebook-f"></i> */}
+                            <i className="bi bi-facebook"></i>
                           </a>
                         </li>
                       </ul>
@@ -2216,12 +2189,12 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="footer-widget footer1-col-2 widget_nav_menu">
-                  <div class="footer-title">
-                    <h4 class="title">Our Services</h4>
+              <div className="col-lg-3 col-md-6">
+                <div className="footer-widget footer1-col-2 widget_nav_menu">
+                  <div className="footer-title">
+                    <h4 className="title">Our Services</h4>
                   </div>
-                  <div class="footer-menu">
+                  <div className="footer-menu">
                     <ul>
                       <li>
                         <a href="#">Power & Energy Sectors</a>
@@ -2242,12 +2215,12 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-6">
-                <div class="footer-widget footer1-col-3 widget_nav_menu">
-                  <div class="footer-title">
-                    <h4 class="title">Useful links</h4>
+              <div className="col-lg-2 col-md-6">
+                <div className="footer-widget footer1-col-3 widget_nav_menu">
+                  <div className="footer-title">
+                    <h4 className="title">Useful links</h4>
                   </div>
-                  <div class="footer-menu">
+                  <div className="footer-menu">
                     <ul>
                       <li>
                         <a href="about.html">About Us</a>
@@ -2268,38 +2241,38 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="footer-widget footer1-col-4">
-                  <div class="footer-title">
-                    <h4 class="title">Official Info</h4>
+              <div className="col-lg-3 col-md-6">
+                <div className="footer-widget footer1-col-4">
+                  <div className="footer-title">
+                    <h4 className="title">Official Info</h4>
                   </div>
-                  <div class="footer-contact">
+                  <div className="footer-contact">
                     <ul>
                       <li>
-                        <div class="contact-icon">
-                          {/* <i class="fa-solid fa-envelope"></i> */}
-                          <i class="bi bi-envelope"></i>
+                        <div className="contact-icon">
+                          {/* <i className="fa-solid fa-envelope"></i> */}
+                          <i className="bi bi-envelope"></i>
                         </div>
                         <a href="mailto:Info@gmail.com">Info@gmail.com</a>
                       </li>
                       <li>
-                        <div class="contact-icon">
-                          {/* <i class="fa-sharp fa-solid fa-globe"></i> */}
-                          <i class="bi bi-globe"></i>
+                        <div className="contact-icon">
+                          {/* <i className="fa-sharp fa-solid fa-globe"></i> */}
+                          <i className="bi bi-globe"></i>
                         </div>
                         <a href="#">www.yourwebsite.com</a>
                       </li>
                       <li>
-                        <div class="contact-icon">
-                          {/* <i class="fa-regular fa-location-dot"></i> */}
-                          <i class="bi bi-geo-alt"></i>
+                        <div className="contact-icon">
+                          {/* <i className="fa-regular fa-location-dot"></i> */}
+                          <i className="bi bi-geo-alt"></i>
                         </div>
                         <span>225 Marion Street, Columbia</span>
                       </li>
                       <li>
-                        <div class="contact-icon">
-                          {/* <i class="fa-solid fa-phone-volume"></i> */}
-                          <i class="bi bi-phone"></i>
+                        <div className="contact-icon">
+                          {/* <i className="fa-solid fa-phone-volume"></i> */}
+                          <i className="bi bi-phone"></i>
                         </div>
                         <a href="tel:+00123456789">+ 00 123 456 789</a>
                       </li>
@@ -2309,19 +2282,19 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="shape-left">
+          <div className="shape-left">
             <img src={pic31} alt="Shape" />
           </div>
-          <div class="shape-right">
+          <div className="shape-right">
             <img src={pic31} alt="Shape" />
           </div>
         </div>
-        <div class="tj-copyright-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="copyright-content-ara">
-                  <div class="copyright-text">
+        <div className="tj-copyright-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="copyright-content-ara">
+                  <div className="copyright-text">
                     <p>
                       Copyright © 2024{" "}
                       <a href="#" target="_blank">
@@ -2331,7 +2304,7 @@ const Home = () => {
                       All Rights Reserved.
                     </p>
                   </div>
-                  <div class="bottom-menu">
+                  <div className="bottom-menu">
                     <ul>
                       <li>
                         <a href="#">Setting & Privacy</a>
@@ -2349,32 +2322,35 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div class="sec-left-shape">
+        <div className="sec-left-shape">
           <img src={pic33} alt="Shape" />
         </div>
-        <div class="sec-right-shape">
+        <div className="sec-right-shape">
           <img src={pic34} alt="Shape" />
         </div>
       </footer>
       {/* <!-- end: Footer Area --> */}
 
       {/* <!-- start: Back To Top --> */}
-      <div class="progress-wrap" id="scrollUp">
-        <h1>Hello</h1>
-        {/* <svg
+      <button
+        className="progress-wrap bottomtotop"
+        id="scrollUp"
+        onClick={buttomtoptop}
+      >
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
           fill="currentColor"
-          class="bi bi-arrow-up"
+          className="bi bi-arrow-up"
           viewBox="0 0 16 16"
         >
           <path
             fill-rule="evenodd"
             d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
           />
-        </svg> */}
-      </div>
+        </svg>
+      </button>
     </>
   );
 };

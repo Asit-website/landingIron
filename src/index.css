@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 
-/* .dineshImage{
+.dineshImage{
     background-image: url(./Assets/images/portfolio/portfolio-1.jpg);
         background-repeat: no-repeat;
     background-position: center;
@@ -48,7 +48,7 @@
     background-image: url(./Assets/images/portfolio/portfolio-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-} */
+}
 .dineshFlex{
     display: flex;
     justify-content: center;
@@ -113,3 +113,7 @@ margin-right: 20px;
   .unactive{
     display: none;
   }
+
+.bottomtotop{
+    /* border: 1px solid red; */
+}
