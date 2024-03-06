@@ -5939,11 +5939,60 @@ START: Portfolio CSS
 START: Testimonial CSS
 ----------------------------------------*/
 .tj-testimonial-section {
-  padding-top: 120px;
+   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  gap: 20px;
+  margin: 0 auto;
+  z-index: 2; 
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
+
+.testLeftIcon i{
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.allSwContainer{
+  /* display: inline-block;  */
+  display: flex;
+   width: 100%;
+  vertical-align: top; 
+  margin-right: 10px; 
+  white-space: normal; 
+   /* text-align: center; */
+   justify-content: center;
+  /* max-width: calc(100% - 10px);  */
+}
+
+.containerswap {
+  display: none;
+}
+
+.containerswap.active {
+  display: block;
+  animation-name: comeSlider;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes comeSlider {
+  0%{
+    transform: translateX(150px);
+
+  } 100%{
+transform:translateX(0px);
+  }
+}
+
+
 .tj-testimonial-section .tj-heading-area {
   margin-bottom: -100px;
   z-index: 2;

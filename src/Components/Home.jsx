@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import Pic1 from "../Assets/images/logos/primary-logo.png";
 import Pic2 from "../Assets/images/shapes/about-image-shape2.svg";
@@ -79,19 +79,19 @@ const Home = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(currentIndex);
-  const goToPrevSlide = () => {
-    console.log("hello");
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? item.length - 1 : prevIndex - 1
-    );
-  };
 
-  const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === item.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const goToPrevSlide = () => {
+  //   console.log("hello");
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? item.length - 1 : prevIndex - 1
+  //   );
+  // };
+
+  // const goToNextSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === item.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
   var settings = {
     dots: true,
@@ -107,6 +107,38 @@ const Home = () => {
       behavior: "smooth",
     });
   };
+
+  // ! manish code
+
+  const sliderRef = useRef(null);
+
+  // const handleWheel = (e) => {
+  //   e.preventDefault(); 
+  //   if (sliderRef.current) {
+  //     const delta = e.deltaY || e.detail || e.wheelDelta; 
+  //     sliderRef.current.scrollLeft += delta;
+  //   }
+  // };
+
+  const goToPrevSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: -325, behavior: 'smooth' }); 
+    }
+  };
+
+  const goToNextSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: 325, behavior: 'smooth' }); 
+    }
+  };
+
+
+  // for another container slider 
+  const [activeContainerIndex, setActiveContainerIndex] = useState(0);
+
+  const totalContainers = 4; // Total number of containers
+
+
   return (
     <>
       {/* <!-- start: Header Area --> */}
@@ -300,6 +332,7 @@ const Home = () => {
           </div>
         </div>
       </header>
+
       <header className="tj-header-area header-sticky header-1">
         <div className="mainmenu-area">
           <div className="container">
@@ -584,6 +617,7 @@ const Home = () => {
             <img src={Pic6} alt="Shape" />
           </div>
         </section>
+
         {/* <!-- end: About Section --> */}
 
         {/*  <!-- start: Service Section --> */}
@@ -780,6 +814,7 @@ const Home = () => {
             <img src={Pic8} alt="Shape" />
           </div>
         </section>
+
         {/* <!-- end: Service Section --> */}
 
         {/* <!-- start: Video Section --> */}
@@ -856,6 +891,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         {/* <!-- end: Video Section --> */}
 
         {/* <!-- start: Steps Section --> */}
@@ -1127,6 +1163,7 @@ const Home = () => {
             <img src={Pic11} alt="Shape" />
           </div>
         </section>
+
         {/* <!-- end: Steps Section --> */}
 
         {/* <!-- start: Analysis Section --> */}
@@ -1187,6 +1224,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         {/* <!-- end: Analysis Section --> */}
         {/* 
          <!-- start: Price Section --> */}
@@ -1360,6 +1398,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         {/* <!-- end: Price Section --> */}
 
         {/* <!-- start: Portfolio Section --> */}
@@ -1378,9 +1417,12 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-12">
+
                 <div className="swiper swiper-container tj-portfolio-slider">
                   <div className=" portfolio_dinesh">
+
                     <div className="testimonial-prev">
+
                       <button onClick={goToPrevSlide}>
                         <i className="bi bi-arrow-left"></i>{" "}
                       </button>
@@ -1390,8 +1432,14 @@ const Home = () => {
                         <i className="bi bi-arrow-right"></i>{" "}
                       </button>
                     </div>
+
                   </div>
+
+                  <div  ref={sliderRef}  className="ssWrpa">
+
                   <div className="swiper-wrapper dineshFlex">
+
+                  
                     <div className="swiper-slide dineshwidth">
                       <div className="portfolio-item dineshwidth12">
                         <div className="portfolio-image dineshImage"></div>
@@ -1402,7 +1450,48 @@ const Home = () => {
                           <span className="sub-title">Cement, Petrochemical</span>
                         </div>
                       </div>
+
                     </div>
+
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
+                            <a href="#">Bradley</a>
+                          </h4>
+                          <span className="sub-title">Cement, Petrochemical</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
+                            <a href="#">Bradley</a>
+                          </h4>
+                          <span className="sub-title">Cement, Petrochemical</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
+                            <a href="#">Bradley</a>
+                          </h4>
+                          <span className="sub-title">Cement, Petrochemical</span>
+                        </div>
+                      </div>
+
+                    </div>
+
                     <div className="swiper-slide dineshwidth">
                       <div className="portfolio-item dineshwidth12">
                         <div className="portfolio-image dineshImage12"></div>
@@ -1414,6 +1503,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+
                     <div className="swiper-slide dineshwidth">
                       <div className="portfolio-item dineshwidth12">
                         <div className="portfolio-image dineshImage13"></div>
@@ -1425,6 +1515,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+
                     <div className="swiper-slide dineshwidth">
                       <div className="portfolio-item dineshwidth12">
                         <div className="portfolio-image dineshImage14"></div>
@@ -1436,6 +1527,21 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+
+                    <div className="swiper-slide dineshwidth">
+                      <div className="portfolio-item dineshwidth12">
+                        <div className="portfolio-image dineshImage14"></div>
+                        <div className="portfolio-content">
+                          <h4 className="title">
+                            <a href="#">Grey George</a>
+                          </h4>
+                          <span className="sub-title">Sugar, Cement</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
                   </div>
                 </div>
               </div>
@@ -1451,8 +1557,23 @@ const Home = () => {
         {/* <!-- end: Portfolio Section --> */}
 
         {/* <!-- start: Testimonial Section --> */}
-        <section className="tj-testimonial-section">
-          <div className="container">
+        <section className="tj-testimonial-section ">
+
+          <div className="testLeftIcon">
+         
+          <i onClick={()=>{
+            if(activeContainerIndex > 0){
+                            setActiveContainerIndex((prev)=>prev-1);
+            }
+          }} class="bi bi-arrow-left-circle-fill"></i>
+          </div>
+
+ <div className="allSwContainer">
+
+
+{/* container */}
+          <div className={`containerswap ${activeContainerIndex === 0 ? 'active' : ''}`}>
+            
             <div className="row">
               <div className="col-lg-5"></div>
               <div className="col-lg-7">
@@ -1467,14 +1588,18 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="row">
               <div className="col">
+
                 <div className="testimonial-wrapper">
                   <div className="row align-items-end">
                     <div className="col-lg-4 offset-lg-1">
                       <div className="swiper testimonial-auother-slider">
                         <div className="swiper-wrapper">
+
                           <div className="swiper-slide testimonial-auother">
+
                             <div className="thumb-image">
                               <img src={Pic16} alt="Image" />
                               <div className="quote-icon">
@@ -1488,7 +1613,6 @@ const Home = () => {
                             <div className="testimonial-info">
                               <div className="testimonial-rating">
                                 <div className="star-ratings">
-                                  {/* <div className="fill-ratings" style="width: 73%"> */}
                                   <div className="fill-ratings">
                                     <span>★★★★★</span>
                                   </div>
@@ -1501,83 +1625,35 @@ const Home = () => {
                                 <ul className="dot-style">
                                   <li>
                                     <a href="#">
-                                      {/* <i className="fa-brands fa-x-twitter"></i> */}
                                       <i className="bi bi-twitter-x"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i className="fa-brands fa-whatsapp"></i> */}
                                       <i className="bi bi-whatsapp"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i className="fa-brands fa-instagram"></i> */}
                                       <i className="bi bi-instagram"></i>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="#">
-                                      {/* <i className="fa-brands fa-facebook-f"></i> */}
                                       <i className="bi bi-facebook"></i>
                                     </a>
                                   </li>
                                 </ul>
                               </div>
                             </div>
+
                           </div>
-                          {/* <div className="swiper-slide testimonial-auother">
-                              <div className="thumb-image">
-                                <img src={Pic16} alt="Image" />
-                                <div className="quote-icon">
-                                  <img src={pic17} alt="Icon" />
-                                </div>
-                              </div>
-                              <div className="testimonial-name">
-                                <h3 className="title">David,</h3>
-                                <span className="sub-title">Desinger</span>
-                              </div>
-                              <div className="testimonial-info">
-                                <div className="testimonial-rating">
-                                  <div className="star-ratings">
-                                    <div className="fill-ratings">
-                                      <span>★★★★★</span>
-                                    </div>
-                                    <div className="empty-ratings">
-                                      <span>★★★★★</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="testimonial-socials">
-                                  <ul className="dot-style">
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-twitter-x"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-whatsapp"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-instagram"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-facebook"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div> */}
+                          
+              
                         </div>
                       </div>
                     </div>
+
                     <div className="col-lg-7">
                       <div className="swiper thumb-content-slider">
                         <div className="swiper-wrapper">
@@ -1595,7 +1671,235 @@ const Home = () => {
                               </p>
                             </div>
                           </div>
-                          {/* <div className="swiper-slide">
+                         
+                        </div>
+                        <div className="testimonial-navigation">
+                          <div className="testimonial-prev">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                          <div className="testimonial-next">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          {/* ciontainer */}
+          <div className={`containerswap ${activeContainerIndex === 1 ? 'active' : ''}`}>
+            
+            <div className="row">
+              <div className="col-lg-5"></div>
+              <div className="col-lg-7">
+                <div className="tj-heading-area">
+                  <h4 className="sub-title">
+                    Reviews
+                    <span className="section-sub-title-shape"></span>
+                  </h4>
+                  <h2 className="sec-title">
+                    Happy Clients <span>Thoughts</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col">
+
+                <div className="testimonial-wrapper">
+                  <div className="row align-items-end">
+                    <div className="col-lg-4 offset-lg-1">
+                      <div className="swiper testimonial-auother-slider">
+                        <div className="swiper-wrapper">
+
+                          <div className="swiper-slide testimonial-auother">
+
+                            <div className="thumb-image">
+                              <img src={Pic16} alt="Image" />
+                              <div className="quote-icon">
+                                <img src={pic17} alt="Icon" />
+                              </div>
+                            </div>
+                            <div className="testimonial-name">
+                              <h3 className="title">Manish,</h3>
+                              <span className="sub-title">Web develper</span>
+                            </div>
+                            <div className="testimonial-info">
+                              <div className="testimonial-rating">
+                                <div className="star-ratings">
+                                  <div className="fill-ratings">
+                                    <span>★★★</span>
+                                  </div>
+                                  <div className="empty-ratings">
+                                    <span>★★★</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="testimonial-socials">
+                                <ul className="dot-style">
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-twitter-x"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-whatsapp"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-instagram"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-facebook"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+                          
+         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-7">
+                      <div className="swiper thumb-content-slider">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide">
+                            <div className="testimonial-content-slider">
+                              <p>
+                                ‘this is another slider of prgaram  fdjflksjfkldsj fdlkfdj fld
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or
+                                randomised words which don't look even slightly
+                                believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of
+                                text.’’
+                              </p>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div className="testimonial-navigation">
+                          <div className="testimonial-prev">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                          <div className="testimonial-next">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+{/* container */}
+          <div className={`containerswap ${activeContainerIndex === 2 ? 'active' : ''}`}>
+            
+            <div className="row">
+              <div className="col-lg-5"></div>
+              <div className="col-lg-7">
+                <div className="tj-heading-area">
+                  <h4 className="sub-title">
+                    Reviews
+                    <span className="section-sub-title-shape"></span>
+                  </h4>
+                  <h2 className="sec-title">
+                    Happy Clients <span>Thoughts</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col">
+
+                <div className="testimonial-wrapper">
+                  <div className="row align-items-end">
+                    <div className="col-lg-4 offset-lg-1">
+                      <div className="swiper testimonial-auother-slider">
+                        <div className="swiper-wrapper">
+
+                          <div className="swiper-slide testimonial-auother">
+
+                            <div className="thumb-image">
+                              <img src={Pic16} alt="Image" />
+                              <div className="quote-icon">
+                                <img src={pic17} alt="Icon" />
+                              </div>
+                            </div>
+                            <div className="testimonial-name">
+                              <h3 className="title">David,</h3>
+                              <span className="sub-title">Desinger</span>
+                            </div>
+                            <div className="testimonial-info">
+                              <div className="testimonial-rating">
+                                <div className="star-ratings">
+                                  <div className="fill-ratings">
+                                    <span>★★★★★</span>
+                                  </div>
+                                  <div className="empty-ratings">
+                                    <span>★★★★★</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="testimonial-socials">
+                                <ul className="dot-style">
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-twitter-x"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-whatsapp"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-instagram"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-facebook"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+                          
+              
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-7">
+                      <div className="swiper thumb-content-slider">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide">
                             <div className="testimonial-content-slider">
                               <p>
                                 ‘’There are many variations of passages of Lorem
@@ -1608,7 +1912,8 @@ const Home = () => {
                                 text.’’
                               </p>
                             </div>
-                          </div> */}
+                          </div>
+                         
                         </div>
                         <div className="testimonial-navigation">
                           <div className="testimonial-prev">
@@ -1620,17 +1925,157 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
+
                   </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          {/* ciontainer */}
+          <div className={`containerswap ${activeContainerIndex === 3 ? 'active' : ''}`}>
+            
+            <div className="row">
+              <div className="col-lg-5"></div>
+              <div className="col-lg-7">
+                <div className="tj-heading-area">
+                  <h4 className="sub-title">
+                    Reviews
+                    <span className="section-sub-title-shape"></span>
+                  </h4>
+                  <h2 className="sec-title">
+                    Happy Clients <span>Thoughts</span>
+                  </h2>
                 </div>
               </div>
             </div>
+
+            <div className="row">
+              <div className="col">
+
+                <div className="testimonial-wrapper">
+                  <div className="row align-items-end">
+                    <div className="col-lg-4 offset-lg-1">
+                      <div className="swiper testimonial-auother-slider">
+                        <div className="swiper-wrapper">
+
+                          <div className="swiper-slide testimonial-auother">
+
+                            <div className="thumb-image">
+                              <img src={Pic16} alt="Image" />
+                              <div className="quote-icon">
+                                <img src={pic17} alt="Icon" />
+                              </div>
+                            </div>
+                            <div className="testimonial-name">
+                              <h3 className="title">Manish,</h3>
+                              <span className="sub-title">Web develper</span>
+                            </div>
+                            <div className="testimonial-info">
+                              <div className="testimonial-rating">
+                                <div className="star-ratings">
+                                  <div className="fill-ratings">
+                                    <span>★★★</span>
+                                  </div>
+                                  <div className="empty-ratings">
+                                    <span>★★★</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="testimonial-socials">
+                                <ul className="dot-style">
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-twitter-x"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-whatsapp"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-instagram"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i className="bi bi-facebook"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+                          
+         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-7">
+                      <div className="swiper thumb-content-slider">
+                        <div className="swiper-wrapper">
+                          <div className="swiper-slide">
+                            <div className="testimonial-content-slider">
+                              <p>
+                                ‘this is another slider of prgaram  fdjflksjfkldsj fdlkfdj fld
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or
+                                randomised words which don't look even slightly
+                                believable. If you are going to use a passage of
+                                Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of
+                                text.’’
+                              </p>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div className="testimonial-navigation">
+                          <div className="testimonial-prev">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                          <div className="testimonial-next">
+                            <i className="flaticon-right-arrow"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
+
+          
+          </div>        
+        
+
+          <div className="testLeftIcon">
+          <i onClick={()=>{
+            if(activeContainerIndex < totalContainers-1){
+              setActiveContainerIndex((prev)=>prev+1);
+            }
+          }} class="bi bi-arrow-right-circle-fill"></i>
+          </div>
+
+
+          
           <div className="testimonial-sec-top-shape">
-            <img src={pic18} alt="Images" />
-          </div>
-          <div className="testimonial-sec-bottom-shape">
-            <img src={pic19} alt="Images" />
-          </div>
+                            <img src={pic18} alt="Images" />
+                          </div>
+                          <div className="testimonial-sec-bottom-shape">
+                            <img src={pic19} alt="Images" />
+                          </div>
+
         </section>
         {/* <!-- end: Testimonial Section --> */}
 
@@ -2356,3 +2801,59 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+            {/* <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="Image" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
+                                </div>
+                              </div>
+                              <div className="testimonial-name">
+                                <h3 className="title">David,</h3>
+                                <span className="sub-title">Desinger</span>
+                              </div>
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div> */}
+
+
+                            // these are section s
