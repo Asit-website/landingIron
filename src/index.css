@@ -49,12 +49,34 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.dineshFlex{
-    display: flex;
-    justify-content: center;
-}
+
+.ssWrpa {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+
+  .ssWrpa::-webkit-scrollbar {
+    width: 0;
+  }
+  
+
+
+.swiper-slide {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-right: 10px;
+    white-space: normal; 
+    max-width: calc(100% - 10px);
+  }
 .dineshwidth{
-    width: 50%;
+    /* width: 50%; */
+    min-width: 312px;
+    max-width: 320px;
     margin: 10px;
 }
 
